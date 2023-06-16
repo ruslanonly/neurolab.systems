@@ -1,0 +1,24 @@
+.technologies {
+  & {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  &-title {
+    & {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--c-light-grey);
+    }
+  }
+  &-tech-list {
+    & {
+      display: flex;
+      gap: 3rem;
+    }
+  }
+}

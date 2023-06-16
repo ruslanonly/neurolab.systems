@@ -1,0 +1,25 @@
+.container {
+  & {
+    width: 100%;
+  }
+  &--page-wrapper {
+    & {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+  &--primary {
+    & {
+      max-width: var(--max-width-primary);
+      margin: 0 5rem;
+    }
+  }
+  &--secondary {
+    & {
+      max-width: var(--max-width-secondary);
+      margin: 0 2rem;
+    }
+  }
+}

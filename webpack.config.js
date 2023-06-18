@@ -15,7 +15,7 @@ const htmlPlugins = htmlNames.map((fileName) => {
 
 module.exports = {
   entry: {
-    main: './src/js/main/index.js',
+    main: './src/js/main/index.ts',
   },
   output: {
     filename: '[name]/[name].bundle.js',
@@ -27,6 +27,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader',
+      },
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,

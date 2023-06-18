@@ -7,18 +7,41 @@
     justify-content: center;
     gap: 2.5rem;
   }
-  &-title {
+  &__title {
     & {
       text-align: center;
       font-size: 1rem;
       font-weight: 500;
       color: var(--c-light-grey);
     }
+    &:before {
+      content: "ИСПОЛЬЗУЕМ 30+ ФРЕЙМВОРКОВ";
+    }
   }
-  &-tech-list {
+  &__tech-list {
     & {
       display: flex;
       gap: 3rem;
+    }
+  }
+}
+
+@media all and (max-width: 1108px) {
+  .technologies {
+    & {
+      gap: 1.5rem;
+    }
+    &__title {
+      &:before {
+        content: "ТЕХНОЛОГИИ";
+      }
+    }
+    &__tech-list {
+      & {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 .solved-tasks {
   & {
     padding: 0 1rem;
+    margin-bottom: 6rem;
   }
 
   &__wrapper {
@@ -41,6 +42,38 @@
       font-weight: 400;
       font-size: 1.2rem;
       color: var(--c-grey);
+    }
+  }
+}
+
+@media all and (max-width: 1108px) {
+  .solved-tasks {
+    & {
+      margin-bottom: 1rem;
+    }
+    &__wrapper {
+      & {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+    }
+  
+    &__title {
+      & {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .solved-tasks__list {
+    &-item {
+      &-title {
+        font-size: 1.5rem;
+      }
+      &-description {
+        font-size: 1rem;
+      }
     }
   }
 }

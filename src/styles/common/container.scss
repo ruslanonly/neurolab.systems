@@ -23,3 +23,14 @@
     }
   }
 }
+
+
+@media all and (max-width: 1108px) {
+  .container {
+    &--secondary {
+      & {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

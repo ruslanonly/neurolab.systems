@@ -22,8 +22,18 @@
         <a class="header__menu-item" href="#section-dev-principles">Принципы</a>
       </div>
       <div class="header__buttons">
-        <button class="button button--secondary">Связаться</button>
-        <button class="button button--primary">Заявка</button>
+        <a class="header__call-button" href="tel:+79557371212">
+          <button class="button button--secondary">
+            <img src="../assets/call.svg" alt=""> 
+            <span>Связаться</span>
+          </button>
+        </a>
+        <button class="button button--primary">
+          <img 
+          style="transform: translateY(2px);" 
+          src="../assets/tabbar/black-send.svg" alt=""> 
+          <span>Заявка</span>
+        </button>
       </div>
     </div>
   </header>
@@ -65,6 +75,48 @@
   
   <div class="container container--page-wrapper">
     <div class="header__filler"></div>
+
+    <section id="section-main-product-slider" class="container">
+      <div class="main-product-slider">
+        <div class="main-product-slider-swiper">
+          <div class="main-product-slider__wrapper">
+            <div class="main-product-slider__slide">
+              <div class="main-product-slider__slide-wrapper">
+                <div class="main-product-slider__slide-top">
+                  <h1 class="main-product-slider__slide-title">СОЮЗНИК</h1>
+                  <h2 class="main-product-slider__slide-subtitle">Система обеспечения безопасности периметра</h2>
+                </div>
+                <div class="main-product-slider__slide-bottom">
+                  <div class="main-product-slider__slide-controls">
+                    <button class="main-product-swiper-button-prev">
+                      <span class="material-symbols-outlined">
+                        west
+                      </span>
+                    </button>
+                    <button class="main-product-swiper-button-next">
+                      <span class="material-symbols-outlined">
+                        east
+                      </span>
+                    </button>
+                  </div>
+                  <div class="main-product-slider__slide-scroll">
+                    <div class="main-product-slider__scroll-top">
+                      <span>01 / 06</span>
+                      <span>скролл</span>
+                    </div>
+                    <div class="main-product-slider__scroll-line">
+                      <div 
+                      class="main-product-slider__scroll-subline"
+                      style="width: 16%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="section-key-facts" class="container container--primary">
       <div class="key-facts">
@@ -137,6 +189,16 @@
           <img src="../assets/tech-nginx.svg" alt="">
           <img src="../assets/tech-docker.svg" alt="">
           <img src="../assets/tech-gitlab.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="section-dev-principles" class="container container--secondary">
+      <div class="dev-principles">
+        <div class="dev-principles-title"></div>
+        <div class="dev-principles-slider-navigation"></div>
+        <div class="dev-principles-slider">
+
         </div>
       </div>
     </section>

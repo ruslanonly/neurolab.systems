@@ -1,5 +1,6 @@
 .header {
   & {
+    z-index: 1000;
     width: 100%;
     max-width: var(--max-width-secondary);
     position: fixed;
@@ -92,8 +93,25 @@
   }
 }
 
+.header__call-button {
+  & {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+  }
+  .button {
+    height: 100%;
+  }
+}
+
 @media all and (max-width: 1108px) {
   .header {
     display: none;
+
+    &__filler {
+      & {
+        display: none;
+      }
+    }
   }
 }

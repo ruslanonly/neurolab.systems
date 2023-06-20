@@ -69,6 +69,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name]/[name].bundle.css',

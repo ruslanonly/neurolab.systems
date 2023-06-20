@@ -75,7 +75,7 @@
 .header__menu-item--active.header__menu-item--products {
   span {
     &:nth-child(2) {
-      transform: translateY(1px) rotate(180deg);
+      transform: translateY(1px) rotate(-180deg);
     }
   }
 }

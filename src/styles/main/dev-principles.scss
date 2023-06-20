@@ -1,0 +1,152 @@
+.dev-principles {
+  & {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  &__slider-nav {
+    & {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__nav-fracs {
+    font-size: 2rem;
+    font-weight: 400;
+    span {
+      &:nth-child(2) {
+        color: var(--c-light-grey);
+      }
+    }
+  }
+
+  &__nav-controls {
+    & {
+      display: flex;
+      gap: 1rem;
+    }
+    * {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    &-prev, &-next {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      overflow: hidden;
+      span {
+        transition: all .3s ease;
+        &:nth-child(2) {
+          position: absolute;
+          color: var(--c-turquoise);
+        }
+      }
+    }
+
+    &-prev {
+      span {
+        &:nth-child(2) {
+          transform: translateX(100%);
+        }
+      }
+
+      &:hover {
+        span {
+          &:nth-child(1) {
+            transform: translateX(-100%);
+          }
+          &:nth-child(2) {
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+
+    &-next {
+      span {
+        &:nth-child(2) {
+          transform: translateX(-200%);
+        }
+      }
+
+      &:hover {
+        span {
+          &:nth-child(1) {
+            transform: translateX(100%);
+          }
+          &:nth-child(2) {
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+    
+  }
+
+  &__slider {
+    &-wrapper {
+      display: grid;
+      grid-auto-flow: column;
+      max-width: 1108px;
+    }
+  }
+
+  &__slide-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--c-turquoise);
+  }
+  &__slide-desc {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--c-light-grey);
+  }
+  &__slide-number {
+    font-weight: 300;
+    font-size: 8rem;
+    color: var(--c-turquoise);
+  }
+
+  &__slide {
+    & {
+      height: 430px;
+    }
+
+    &-info {
+      & {
+        display: flex;
+        flex-direction: column;
+        gap: 1.9rem;
+      }
+    }
+    &-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid #969696;
+      border-radius: 50px;
+      padding: 2rem 2rem 1.5rem 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 1108px) {
+  .dev-principles {
+  
+    &__title {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 32px;
+    }
+  }
+}

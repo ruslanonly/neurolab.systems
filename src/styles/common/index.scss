@@ -17,16 +17,17 @@ button {
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-margin-block: 2rem;
 }
 
 body {
-
 }
 
 :root {
   --tr: .1s ease;
   --max-width-primary: 1220px;
   --max-width-secondary: 1108px;
+  --c-turquoise: #6EC4CB;
   --c-white-o20: rgba(255, 255, 255, 0.2);
   --c-grey: #969696;
   --c-light-grey: #C2C2C2;

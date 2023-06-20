@@ -6,13 +6,15 @@
   <title>Главная - Neurolab</title>
 </head>
 <body>
+  <div id="ProductsPopupWrapper">
+  </div>
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-wrapper">
         <img src="../assets/logo-neurolab.svg">
       </div>
       <div class="header__menu">
-        <button class="header__menu-item header__menu-item--products">
+        <button id="HeaderProductsButton" class="header__menu-item header__menu-item--products">
           <span>Продукты</span> 
           <span class="material-symbols-outlined">expand_more</span>
         </button>
@@ -52,7 +54,7 @@
         </div>
         <span class="tab-bar__item-name">Решаемые задачи</span>
       </div>
-      <div class="tab-bar__item">
+      <div id="TabbarProductsButton" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/products.svg" alt="">
         </div>
@@ -193,12 +195,56 @@
       </div>
     </section>
 
-    <section id="section-dev-principles" class="container container--secondary">
-      <div class="dev-principles">
-        <div class="dev-principles-title"></div>
-        <div class="dev-principles-slider-navigation"></div>
-        <div class="dev-principles-slider">
-
+    <section id="section-dev-principles">
+      <div class="container container--secondary">
+        <div class="dev-principles">
+          <h1 class="dev-principles__title">
+            Принципы разработки
+          </h1>
+          <div class="dev-principles__slider-nav">
+            <div class="dev-principles__nav-fracs">
+              <span class="dev-principles__nav-fracs-current">01</span><span> — 04</span>
+            </div>
+            <div class="dev-principles__nav-controls">
+              <button class="dev-principles__nav-controls-prev">
+                <span class="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+                <span class="material-symbols-outlined">
+                  arrow_left_alt
+                </span>
+              </button>
+              <button class="dev-principles__nav-controls-next">
+                <span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+                <span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="dev-principles__slider">
+            <div class="dev-principles__slider-swiper">
+              <div class="dev-principles__slider-wrapper">
+                <div class="dev-principles__slide">
+                  <div class="dev-principles__slide-wrapper">
+                    <div class="dev-principles__slide-info">
+                      <h1 class="dev-principles__slide-title">
+                        Фундаментальный подход
+                      </h1>
+                      <p class="dev-principles__slide-desc">
+                        Изучаем базу, формируем логику продукта и только после приступаем к разработке.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="dev-principles__slide-number">01</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

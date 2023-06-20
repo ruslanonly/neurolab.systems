@@ -1,6 +1,6 @@
 .tab-bar {
   & {
-    z-index: 100;
+    z-index: 200;
     display: none;
     position: fixed;
     bottom: 0;
@@ -24,12 +24,30 @@
 
 .tab-bar__item {
   & {
-    flex-basis: 25%;
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .2rem;
+    cursor: pointer;
+    text-decoration: none !important;
+
   }
+
+  &:nth-child(3):hover  {
+    .tab-bar__item-name {
+      transition: all var(--tr);
+      color: var(--c-volt-green);
+    }
+  }
+
+  &:not(:nth-child(3)):hover {
+    .tab-bar__item-name {
+      transition: all var(--tr);
+      color: var(--c-turquoise);
+    }
+  }
+
   &-icon {
     height: 30px;
   }

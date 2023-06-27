@@ -1,6 +1,5 @@
 .solved-tasks {
   & {
-    padding: 0 1rem;
     margin-bottom: 6rem;
   }
 
@@ -48,9 +47,6 @@
 
 @media all and (max-width: 1108px) {
   .solved-tasks {
-    & {
-      margin-bottom: 1rem;
-    }
     &__wrapper {
       & {
         display: flex;

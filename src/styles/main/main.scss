@@ -7,10 +7,44 @@
 @import "../common/apply-form.scss";
 @import "../components/form.scss";
 @import "../common/products-popup.scss";
-
+@import "../common/arrow-controls.scss";
 
 @import "./key-facts.scss";
 @import "./solved-tasks.scss";
 @import "./technologies.scss";
 @import "./main-product-slider.scss";
 @import "./dev-principles.scss";
+
+#section-apply-form {
+  margin-bottom: 9rem;
+}
+
+
+#section-dev-principles {
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+#section-key-facts {
+  margin-bottom: 5rem;
+}
+
+#section-main-product-slider {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media all and (max-width: 1108px) {
+  #section-main-product-slider {
+    margin: 0 0rem 3rem 0;
+  }
+
+  #section-key-facts {
+    margin-bottom: 3rem;
+  }
+
+  
+  #section-technologies {
+    margin-bottom: 5rem;
+  }
+}

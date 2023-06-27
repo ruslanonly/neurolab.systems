@@ -17,10 +17,21 @@ export function getProductsPopupHTML() {
 
   for(let i = 0; i < mainProducts.length; i++) {
     let p = mainProducts[i];
+
+    let backgroundHTML = p.presentationType == "video" ? `
+      <video class="products-popup__video" autoplay muted loop>
+        <source src="${p.video}" type="video/mp4">
+      </video>
+    ` : `
+      <div class="products-popup__image" style="background-image: url(${p.photo})"></div>
+    `
+    
     productsPopupHTML += `
       <a class="products-popup__product">
         <div class="products-popup__product-top">
-          <div class="products-popup__product-image"></div>
+          <div class="products-popup__product-ph-img">
+            ${backgroundHTML}
+          </div>
           <div class="products-popup__product-title">${p.title}</div>
         </div>
         <div class="products-popup__product-subtitle">${p.subtitle}</div>

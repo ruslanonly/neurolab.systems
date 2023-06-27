@@ -1,0 +1,123 @@
+.window-scroll {
+  &__window {
+    & {
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    &-top-title {
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    &-title {
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 4rem;
+    }
+
+    &-subtitle {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    &-l {
+      & {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4.5rem 6rem 5rem 6rem;
+      }
+
+      &-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    &-r {
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+
+      &-1 {
+        background-image: url("../../assets/window-scroll/1.jpg");
+      }
+      &-2 {
+        background-image: url("../../assets/window-scroll/2.jpg");
+      }
+      &-3 {
+        background-image: url("../../assets/window-scroll/3.jpg");
+      }
+    }
+  }
+  &__window-dark {
+    & {
+      background: var(--c-dark-blue);
+    }
+    .window-scroll__window {
+      &-top-title {
+        color: var(--c-volt-green);
+      }
+  
+      &-title {
+        color: var(--c-volt-green);
+      }
+  
+      &-subtitle {
+        color: var(--c-light-grey);
+      }
+    }
+  }
+  &__window-light {
+    & {
+      background: var(--c-turquoise);
+    }
+    .window-scroll__window {
+      &-top-title {
+        color: var(--c-dark-blue);
+      }
+  
+      &-title {
+        color: var(--c-dark-blue);
+      }
+  
+      &-subtitle {
+        color: var(--c-dark-blue);
+      }
+    }
+    
+  }
+}
+
+@media all and (max-width: 1108px) {
+  .window-scroll {
+    &__window {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr min-content;
+
+      &-title {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 500;
+      }
+      &-l {
+        grid-row: 2;   
+        padding: 1.5rem 1.5rem 3rem 1.5rem;     
+        gap: 6rem;
+      }
+      &-r {
+        grid-row: 1;
+        width: 100vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.technologies {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: var(--c-light-grey);
+  }
+
+  &__tech-list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 1108px) {
+  .technologies {
+    &__wrapper {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    &__tech-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1rem;
+    }
+  }
+}

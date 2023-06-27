@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - Neurolab</title>
+</head>
+<body>
+  <div id="ProductsPopupWrapper">
+  </div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo-wrapper">
+        <img src="../assets/logo-neurolab.svg">
+      </div>
+      <div class="header__menu">
+        <button id="HeaderProductsButton" class="header__menu-item header__menu-item--products">
+          <span>Продукты</span> 
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <button class="header__menu-divider"></button>
+        <a class="header__menu-item" href="#section-key-facts">Факты</a>
+        <a class="header__menu-item" href="#section-solved-tasks">Решаемые задачи</a>
+        <a class="header__menu-item" href="#section-dev-principles">Принципы</a>
+      </div>
+      <div class="header__buttons">
+        <a class="header__call-button" href="tel:+79557371212">
+          <button class="button button--secondary">
+            <img src="../assets/call.svg" alt=""> 
+            <span>Связаться</span>
+          </button>
+        </a>
+        <button class="button button--primary">
+          <img 
+          style="transform: translateY(2px);" 
+          src="../assets/tabbar/black-send.svg" alt=""> 
+          <span>Заявка</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="tab-bar">
+    <div class="tab-bar__wrapper">
+      <a href="#section-key-facts" id="TabbarFactsItem" class="tab-bar__item">
+        <div class="tab-bar__item-icon">
+          <img src="../assets/tabbar/facts.svg" alt="">
+        </div>
+        <span class="tab-bar__item-name">Факты</span>
+      </a>
+      <a href="#section-solved-tasks" id="TabbarSolvedTasksItem" class="tab-bar__item">
+        <div class="tab-bar__item-icon">
+          <img src="../assets/tabbar/solved-tasks.svg" alt="">
+        </div>
+        <span class="tab-bar__item-name">Решаемые задачи</span>
+      </a>
+      <div id="TabbarProductsItem" class="tab-bar__item">
+        <div class="tab-bar__item-icon">
+          <img src="../assets/tabbar/products.svg" alt="">
+        </div>
+        <span class="tab-bar__item-name">Продукты</span>
+      </div>
+      <a href="#section-dev-principles" id="TabbarPrinciplesItem" class="tab-bar__item">
+        <div class="tab-bar__item-icon">
+          <img style="transform: translateY(-3px);" src="../assets/tabbar/principles.svg" alt="">
+        </div>
+        <span class="tab-bar__item-name">Принципы</span>
+      </a>
+      <div id="TabbarSendItem" class="tab-bar__item">
+        <div class="tab-bar__item-icon">
+          <img src="../assets/tabbar/send.svg" alt="">
+        </div>
+        <span class="tab-bar__item-name">Заявки</span>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container container--secondary">
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__sk-logo footer__top-sk-logo">
+            <img style="width: 44px;" src="../assets/skolkovo-logo.svg">
+          </div>
+          <div class="footer__top__logo">
+            <img src="../assets/logo-neurolab-dark.svg" alt="">
+          </div>
+          <div class="footer__top__info-groups">
+            <div class="footer__top__info-groups-item">
+              <h3>Страницы</h3>
+              <div class="footer__top__info-groups-item-list footer__top__info-groups-item-list--expand">
+                <span>Главная</span>
+                <span>Технологии</span>
+                <span>Цели и задачи</span>
+              </div>
+            </div>
+            <div class="footer__top__info-groups-item">
+              <h3>Проекты</h3>
+              <div class="footer__top__info-groups-item-list footer__top__info-groups-item-list--expand">
+                <span>ПАК РЛС ПРО</span>
+                <span>ПАКРОВ</span>
+                <span>ИСБ</span>
+                <span>ПрофТренер</span>
+                <span>DMS</span>
+                <span>Распознование</span>
+              </div>
+            </div>
+            <div class="footer__top__info-groups-item">
+              <h3>Контакты</h3>
+              <div class="footer__top__info-groups-item-list">
+                <span>+7 495 134 65 02</span>
+                <span>info@neurolab.systems</span>
+              </div>
+            </div>
+            <div class="footer__top__info-groups-item">
+              <h3>Штаб квартира</h3>
+              <div class="footer__top__info-groups-item-list">
+                <span>Западная ул. 11, микрорайон Климовск, Подольск БЦ Климовск</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom__links footer__bottom__links--mobile">
+            <a href="">Оферта</a>
+            <a href="">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__bottom__wrapper">
+
+            <div class="footer__bottom__OOO">
+              <span >© 2023, ООО «Нейролаб» <br/> ИНН: 710004770; ОГРН: 1217100004648</span>
+              <div class="footer__sk-logo footer__bottom-sk-logo">
+                <img src="../assets/skolkovo-logo.svg">
+              </div>
+            </div>
+            <div class="footer__bottom__redcat">
+              <span>Сделано в red cat</span>
+              <img style="width: 16px; height: 16px;" src="../assets/red-cat-logo.svg" alt="">
+            </div>
+            <div class="footer__bottom__links footer__bottom__links--desktop">
+              <a href="">Оферта</a>
+              <a href="">Политика конфиденциальности</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

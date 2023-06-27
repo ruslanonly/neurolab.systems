@@ -3,9 +3,21 @@ import { MainProduct } from "../common/products";
 export function getMainProductSlidesHTML(slides: MainProduct[]) {
   let html = ``;
   for(let i = 0; i < slides.length; i++) {
+
+    let backgroundHTML = slides[i].presentationType == "video" ? `
+      <video class="main-product-slider__video" autoplay muted loop>
+        <source class="main-product-slider__video" src="${slides[i].video}" type="video/mp4">
+      </video>
+    ` : `
+      <div class="main-product-slider__image" style="background-image: url(${slides[i].photo})"></div>
+    `
+
     html += `
     <div class="main-product-slider__slide">
       <div class="main-product-slider__slide-wrapper">
+
+        ${backgroundHTML}
+
         <div class="main-product-slider__slide-top">
           <h1 class="main-product-slider__slide-title">${slides[i].title}</h1>
           <h2 class="main-product-slider__slide-subtitle">${slides[i].subtitle}</h2>

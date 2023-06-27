@@ -6,6 +6,33 @@
     top: calc(.5rem + 80px);
   }
 
+  &__product-ph-img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__image {
+    & {
+      width: 30px;
+      height: 30px;
+      transform: rotate(-70deg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__video {
+    & {
+      width: 47px;
+      height: 47px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

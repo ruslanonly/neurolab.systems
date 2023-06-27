@@ -3,12 +3,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const htmlNames = ['main'];
+const htmlNames = ['main', 'primary'];
 
 const htmlPlugins = htmlNames.map((fileName) => {
   return new HtmlWebpackPlugin({
     template: `src/html/${fileName}.html`,
-    filename: `${fileName}/${fileName}.html`,
+    filename: `${fileName}.html`,
     chunks: [fileName],
   });
 });
@@ -16,6 +16,7 @@ const htmlPlugins = htmlNames.map((fileName) => {
 module.exports = {
   entry: {
     main: './src/js/main/index.ts',
+    primary: './src/js/primary/index.ts',
   },
   output: {
     filename: '[name]/[name].bundle.js',
@@ -49,6 +50,15 @@ module.exports = {
         },
       },  
       {
+        test: /\.mp4$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'videos/[name].[ext]',
+          },
+        },
+      },
+      {
         test: /\.html$/,
         use: [
           {
@@ -61,6 +71,11 @@ module.exports = {
                     attribute: 'src',
                     type: 'src',
                   },
+                  {
+                    tag: "source",
+                    attribute: "src",
+                    type: "src"
+                  }
                 ],
               },
             },

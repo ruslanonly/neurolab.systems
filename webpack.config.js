@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const htmlNames = ['main', 'primary'];
+const htmlNames = ['main', 'primary', 'secondary'];
 
 const htmlPlugins = htmlNames.map((fileName) => {
   return new HtmlWebpackPlugin({
@@ -17,6 +17,7 @@ module.exports = {
   entry: {
     main: './src/js/main/index.ts',
     primary: './src/js/primary/index.ts',
+    secondary: './src/js/secondary/index.ts',
   },
   output: {
     filename: '[name]/[name].bundle.js',

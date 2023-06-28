@@ -19,9 +19,9 @@
           <span class="material-symbols-outlined">expand_more</span>
         </button>
         <button class="header__menu-divider"></button>
-        <a class="header__menu-item" href="#section-key-facts">Факты</a>
-        <a class="header__menu-item" href="#section-solved-tasks">Решаемые задачи</a>
-        <a class="header__menu-item" href="#section-dev-principles">Принципы</a>
+        <a class="header__menu-item" href="/main.html#section-key-facts">Факты</a>
+        <a class="header__menu-item" href="/main.html#section-solved-tasks">Решаемые задачи</a>
+        <a class="header__menu-item" href="/main.html#section-dev-principles">Принципы</a>
       </div>
       <div class="header__buttons">
         <a class="header__call-button" href="tel:+79557371212">
@@ -75,6 +75,37 @@
     </div>
   </div>
   
+  <div class="container container--page-wrapper">
+    <div class="header__filler"></div>
+    <div id="section-breadcrumb" class="container container--secondary">
+      <div class="breadcrumb">
+        <span class="breadcrumb__item">Продукты</span>
+        <span class="breadcrumb__item breadcrumb__item--active">Пакров</span>
+      </div>
+    </div>
+    <div id="section-product" class="container container--secondary">
+      <div class="product">
+        <div class="product__wrapper">
+          <div class="product__left">
+            <div class="info">
+              <div class="product__titles">
+                <h1 class="product__title">ПАКРОВ</h1>
+                <h2 class="product__subtitle">Программно-аппаратный комплекс раннего обнаружения возгорания</h2>
+              </div>
+              <div class="dropdown"></div>
+            </div>
+            <div class="button button--big-button product__save-button">
+              <img src="../assets/download_button.svg" alt="">
+              <span>Скачать брошюру</span>
+            </div>
+          </div>
+          <div class="product__right">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container container--secondary">
       <footer class="footer">
         <div class="footer__top">
@@ -88,27 +119,27 @@
             <div class="footer__top__info-groups-item">
               <h3>Страницы</h3>
               <div class="footer__top__info-groups-item-list footer__top__info-groups-item-list--expand">
-                <span>Главная</span>
-                <span>Технологии</span>
-                <span>Цели и задачи</span>
+                <a href="/main.html">Главная</span>
+                <a href="/main.html#section-technologies">Технологии</a>
+                <a href="/main.html#section-solved-tasks">Цели и задачи</a>
               </div>
             </div>
             <div class="footer__top__info-groups-item">
               <h3>Проекты</h3>
               <div class="footer__top__info-groups-item-list footer__top__info-groups-item-list--expand">
-                <span>ПАК РЛС ПРО</span>
-                <span>ПАКРОВ</span>
-                <span>ИСБ</span>
-                <span>ПрофТренер</span>
-                <span>DMS</span>
-                <span>Распознование</span>
+                <a href="/primary.html">ПАК РЛС ПРО</a>
+                <a href="/secondary.html?product=pakrov">ПАКРОВ</a>
+                <a href="/secondary.html?product=isb">ИСБ</a>
+                <a href="/secondary.html?product=proftrener">ПрофТренер</a>
+                <a href="/secondary.html?product=dms">DMS</a>
+                <a href="/secondary.html?product=recognition">Распознование</a>
               </div>
             </div>
             <div class="footer__top__info-groups-item">
               <h3>Контакты</h3>
               <div class="footer__top__info-groups-item-list">
-                <span>+7 495 134 65 02</span>
-                <span>info@neurolab.systems</span>
+                <a href="tel:+79557371212" >+7 495 134 65 02</a>
+                <a href="mailto:info@neurolab.systems">info@neurolab.systems</a>
               </div>
             </div>
             <div class="footer__top__info-groups-item">
@@ -133,10 +164,10 @@
                 <img src="../assets/skolkovo-logo.svg">
               </div>
             </div>
-            <div class="footer__bottom__redcat">
+            <a href="http://redcat.moscow/files/welcome-pres-redcat.pdf" class="footer__bottom__redcat">
               <span>Сделано в red cat</span>
               <img style="width: 16px; height: 16px;" src="../assets/red-cat-logo.svg" alt="">
-            </div>
+            </a>
             <div class="footer__bottom__links footer__bottom__links--desktop">
               <a href="">Оферта</a>
               <a href="">Политика конфиденциальности</a>

@@ -2,8 +2,12 @@
   & {
     display: none;
     position: fixed;
-    z-index: 150;
+    z-index: 550;
     top: calc(.5rem + 80px);
+  }
+
+  * {
+    text-decoration: none;
   }
 
   &__product-ph-img {

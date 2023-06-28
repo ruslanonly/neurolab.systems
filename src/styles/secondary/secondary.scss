@@ -1,0 +1,21 @@
+@import "../common/index.scss";
+@import "../common/container.scss";
+@import "../common/header.scss";
+@import "../common/button.scss";
+@import "../common/footer.scss";
+@import "../common/tabbar.scss";
+@import "../common/apply-form.scss";
+@import "../components/form.scss";
+@import "../common/products-popup.scss";
+@import "../common/arrow-controls.scss";
+@import "../common/breadcrumb.scss";
+
+@import "./product.scss";
+
+#section-product {
+  margin-bottom: 6.5rem;
+}
+
+#section-breadcrumb {
+  margin: 2rem 0 1.5rem 0;
+}

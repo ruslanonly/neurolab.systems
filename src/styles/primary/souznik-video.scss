@@ -1,3 +1,49 @@
 .souznik-video { 
-  height: 500px;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    &::before, &::after {
+      z-index: 100;
+      position: absolute;
+      display: block;
+      content: "";
+      height: 100px;
+      width: 100%;
+    }
+
+    &::before {
+      top: -40px;
+      left: 0;
+      background: linear-gradient(180deg, #FFF 67.19%, rgba(255, 255, 255, 0.00) 100%);
+      // background: linear-gradient(180deg, rgba(255,255,255,1) 31%, rgba(255,255,255,0) 100%);
+    }
+
+    &::after {
+      bottom: -20px;
+      left: 0;
+      // background: linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 40.10%);
+    }
+  }
+  &__video {
+    top: 0;
+    width: 100%;
+  }  
+}
+
+@media all and (max-width: 1108px) {
+  .souznik-video { 
+    &__wrapper {
+
+      &::before, &::after {
+        height: 70px;
+      }
+    }
+    &__video {
+      width: 100%;
+    } 
+  }
 }

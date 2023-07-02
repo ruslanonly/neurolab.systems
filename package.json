@@ -41,6 +41,7 @@
   "dependencies": {
     "gsap": "^3.12.1",
     "jquery": "^3.7.0",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "video.js": "^8.3.0"
   }
 }

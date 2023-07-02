@@ -1,0 +1,36 @@
+#SendFormPopup {
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media all and (max-width: 1108px) {
+  #SendFormPopup {
+    .apply-form__wrapper {
+      padding-top: 2.5rem;
+      max-height: 100vh;
+      padding-bottom: 2rem;
+    }
+
+    .apply-form__wrapper-right {
+      & {
+        overflow: visible;
+      }
+    }
+
+    .apply-form__info {
+      padding: 1.5rem 1rem;
+    }
+
+    .apply-form__form {
+      margin-bottom: 6rem;
+    }
+  }
+  
+}

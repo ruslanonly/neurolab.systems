@@ -16,6 +16,11 @@
     }
 
     &-title {
+      width: 1px;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
       font-size: 4rem;
       font-weight: 400;
       letter-spacing: 1px;

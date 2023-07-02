@@ -9,6 +9,9 @@
 @import "../common/products-popup.scss";
 @import "../common/arrow-controls.scss";
 @import "../common/breadcrumb.scss";
+@import "../common/scroll-bar.scss";
+@import "../common/send-form-popup.scss";
+@import "../common/dropdown.scss";
 
 @import "./product.scss";
 
@@ -18,4 +21,15 @@
 
 #section-breadcrumb {
   margin: 2rem 0 1.5rem 0;
+}
+
+@media all and (max-width: 1108px) {
+  #section-product {
+    margin-top: 2rem;
+    padding: 0;
+
+  }
+  #section-breadcrumb {
+    display: none;
+  }
 }

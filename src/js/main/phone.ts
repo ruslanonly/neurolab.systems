@@ -13,9 +13,9 @@ const prefixNumber = (str: string) => {
   return "7 ";
 };
 
-export function setUpApplyFormPhoneInput() {
-  $("#ApplyFormPhoneInput").on("input", (event) => {
-    const inputValue = $("#ApplyFormPhoneInput").val() as string || '';
+export function setUpApplyFormPhoneInput(selector: string) {
+  $(selector).on("input", () => {
+    const inputValue = $(selector).val() as string || '';
   
     let value = inputValue.replace(/\D+/g, '');
   
@@ -48,6 +48,6 @@ export function setUpApplyFormPhoneInput() {
       result += value[i];
     }
   
-    $("#ApplyFormPhoneInput").val(result)
+    $(selector).val(result)
   })
 }

@@ -8,6 +8,8 @@
 <body>
   <div id="ProductsPopupWrapper">
   </div>
+  <div id="SendFormPopupWrapper">
+  </div>
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-wrapper">
@@ -30,7 +32,7 @@
             <span>Связаться</span>
           </button>
         </a>
-        <button class="button button--primary">
+        <button id="HeaderSendButton" class="button button--primary">
           <img 
           style="transform: translateY(2px);" 
           src="../assets/tabbar/black-send.svg" alt=""> 
@@ -42,13 +44,13 @@
 
   <div class="tab-bar">
     <div class="tab-bar__wrapper">
-      <a href="#section-key-facts" id="TabbarFactsItem" class="tab-bar__item">
+      <a href="/main.html#section-key-facts" id="TabbarFactsItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/facts.svg" alt="">
         </div>
         <span class="tab-bar__item-name">Факты</span>
       </a>
-      <a href="#section-solved-tasks" id="TabbarSolvedTasksItem" class="tab-bar__item">
+      <a href="/main.html#section-solved-tasks" id="TabbarSolvedTasksItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/solved-tasks.svg" alt="">
         </div>
@@ -60,13 +62,13 @@
         </div>
         <span class="tab-bar__item-name">Продукты</span>
       </div>
-      <a href="#section-dev-principles" id="TabbarPrinciplesItem" class="tab-bar__item">
+      <a href="/main.html#section-dev-principles" id="TabbarPrinciplesItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img style="transform: translateY(-3px);" src="../assets/tabbar/principles.svg" alt="">
         </div>
         <span class="tab-bar__item-name">Принципы</span>
       </a>
-      <div id="TabbarSendItem" class="tab-bar__item">
+      <div id="TabbarSendButton" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/send.svg" alt="">
         </div>
@@ -201,25 +203,34 @@
             </div>
           </div>
         </div>
-        
       </div>
     </section>
 
     <section id="section-apply-form" class="container container--primary">
-      <div class="apply-form">
+      <div id="MainApplyForm" class="apply-form">
         <div class="apply-form__wrapper">
-          <div class="apply-form__wrapper-left">
-            <h1 class="apply-form__title">Оставить заявку</h1>
+          <div class="apply-form__wrapper-left apply-form__wrapper-left-form">
+            <div class="apply-form__success-message apply-form__message">
+              <h1>Ваша заяка принята!</h1>
+              <p>Какой-то дополнительный текст. Например, наш менеджер свяжется с вами в течении дня.</p>
+              <button class="button button--big-button">Хорошо</button>
+            </div>
+            <div class="apply-form__error-message apply-form__message">
+              <h1>Заявка не отправлена!</h1>
+              <p>Какой-то дополнительный текст. Например, можно здесь подробнее описать возникшую ошибку.</p>
+              <button class="button button--big-button">Попробовать заново</button>
+            </div>
             <div class="apply-form__form">
-              <input class="input apply-form__input" type="text" name="name" placeholder="Имя">
-              <input class="input apply-form__input" type="text" name="email" placeholder="Email">
-              <input id="ApplyFormPhoneInput" class="input apply-form__input" type="text" name="phone" placeholder="+7 999 999 99 99">
+              <h1 class="apply-form__title">Оставить заявку</h1>
+              <input class="input apply-form__input input--name" type="text" name="name" placeholder="Имя">
+              <input class="input apply-form__input input--email" type="text" name="email" placeholder="Email">
+              <input id="MainApplyFormPhoneInput" class="input apply-form__input input--phone" type="text" name="phone" placeholder="+7 999 999 99 99">
               <div class="apply-form__bottom-wrapper">
-                <textarea class="textarea apply-form__input" type="text" name="task" placeholder="Опишите свою задачу"></textarea>
+                <textarea class="textarea apply-form__input input--task" type="text" name="task" placeholder="Опишите свою задачу"></textarea>
                 <div class="apply-form__checkbox">
                   <div class="checkbox">
-                    <input type="checkbox" class="checkbox__input" id="happy" name="happy">
-                    <label for="happy">
+                    <input type="checkbox" class="checkbox__input" id="happy1">
+                    <label for="happy1">
                       <span class="material-symbols-outlined">done</span>
                     </label>
                   </div>
@@ -237,7 +248,7 @@
           <div class="apply-form__wrapper-right">
             <div class="apply-form__info">
               <p>Пока остальные говорят, наши разработки обеспечивают безопасность инфраструктурных и государственных объектов.</p>
-              <div class="apply-form__companies-logos">
+              <div class="apply-form__companies-logos scroll-bar-hided__container">
                 <img src="../assets/form/gasprom.png" alt="">
                 <img src="../assets/form/newopentech.png" alt="">
                 <img src="../assets/form/profitness.png" alt="">

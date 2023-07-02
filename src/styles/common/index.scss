@@ -7,6 +7,13 @@
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: calc(3rem + 80px);
+
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
 }
 
 button {
@@ -17,8 +24,6 @@ button {
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
-  scroll-margin-block: 2rem;
 }
 
 body {
@@ -35,6 +40,7 @@ body {
   --c-light-grey: #C2C2C2;
   --c-dark-blue: #112D38;
   --c-dark-blue-o20: rgba(17, 45, 56, 0.2);
+  --c-dark-blue-o50: rgba(17, 45, 56, 0.5);
   --c-dark-blue-o60: rgba(17, 45, 56, 0.6);
   --c-volt-green: #B1EC52;
   --c-light-volt-green: #E5FFA4;

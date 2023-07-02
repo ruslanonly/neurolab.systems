@@ -8,6 +8,8 @@
 <body>
   <div id="ProductsPopupWrapper">
   </div>
+  <div id="SendFormPopupWrapper">
+  </div>
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-wrapper">
@@ -30,7 +32,7 @@
             <span>Связаться</span>
           </button>
         </a>
-        <button class="button button--primary">
+        <button id="HeaderSendButton" class="button button--primary">
           <img 
           style="transform: translateY(2px);" 
           src="../assets/tabbar/black-send.svg" alt=""> 
@@ -42,13 +44,13 @@
 
   <div class="tab-bar">
     <div class="tab-bar__wrapper">
-      <a href="#section-key-facts" id="TabbarFactsItem" class="tab-bar__item">
+      <a href="/main.html#section-key-facts" id="TabbarFactsItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/facts.svg" alt="">
         </div>
         <span class="tab-bar__item-name">Факты</span>
       </a>
-      <a href="#section-solved-tasks" id="TabbarSolvedTasksItem" class="tab-bar__item">
+      <a href="/main.html#section-solved-tasks" id="TabbarSolvedTasksItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img src="../assets/tabbar/solved-tasks.svg" alt="">
         </div>
@@ -60,18 +62,24 @@
         </div>
         <span class="tab-bar__item-name">Продукты</span>
       </div>
-      <a href="#section-dev-principles" id="TabbarPrinciplesItem" class="tab-bar__item">
+      <a href="/main.html#section-dev-principles" id="TabbarPrinciplesItem" class="tab-bar__item">
         <div class="tab-bar__item-icon">
           <img style="transform: translateY(-3px);" src="../assets/tabbar/principles.svg" alt="">
         </div>
         <span class="tab-bar__item-name">Принципы</span>
       </a>
-      <div id="TabbarSendItem" class="tab-bar__item">
-        <div class="tab-bar__item-icon">
-          <img src="../assets/tabbar/send.svg" alt="">
+      <div class="tab-bar__item">
+        <button id="TabbarCallButton">
+          <img src="../assets/call.svg" alt="">
+        </button>
+        <div id="TabbarSendButton" class="tab-bar__item"">
+          <div class="tab-bar__item-icon">
+            <img src="../assets/tabbar/send.svg" alt="">
+          </div>
+          <span class="tab-bar__item-name">Заявки</span>
         </div>
-        <span class="tab-bar__item-name">Заявки</span>
       </div>
+      
     </div>
   </div>
   
@@ -79,20 +87,23 @@
     <div class="header__filler"></div>
     <div id="section-breadcrumb" class="container container--secondary">
       <div class="breadcrumb">
-        <span class="breadcrumb__item">Продукты</span>
-        <span class="breadcrumb__item breadcrumb__item--active">Пакров</span>
+        <a href="/main.html" class="breadcrumb__item">Продукты</a>
+        <a class="breadcrumb__item breadcrumb__item--active">Пакров</a>
       </div>
     </div>
     <div id="section-product" class="container container--secondary">
       <div class="product">
         <div class="product__wrapper">
+
           <div class="product__left">
-            <div class="info">
+            <div class="product__info">
               <div class="product__titles">
                 <h1 class="product__title">ПАКРОВ</h1>
                 <h2 class="product__subtitle">Программно-аппаратный комплекс раннего обнаружения возгорания</h2>
               </div>
-              <div class="dropdown"></div>
+              <div class="dropdown product__dropdown">
+                
+              </div>
             </div>
             <div class="button button--big-button product__save-button">
               <img src="../assets/download_button.svg" alt="">
@@ -100,8 +111,29 @@
             </div>
           </div>
           <div class="product__right">
-
+            <div class="product__right-header">
+              <div class="product__right-header-title">
+                <div class="product__right-header-icon">
+                  <img src="../assets/task-computer-vision.svg" alt="">
+                </div>
+                <h1></h1>
+              </div>
+              <div class="product__right-header-subtitle">
+                <p></p>
+              </div>
+            </div>
+            <div class="product__right-content scroll-bar__container">
+              <div class="product__right-content-text"></div>
+              
+              <div class="button button--big-button product__save-button">
+                <img src="../assets/download_button.svg" alt="">
+                <span>Скачать брошюру</span>
+              </div>
+            </div>
           </div>
+          <video id="ProductVideo" class="product__video" autoplay muted loop>
+            
+          </video>
         </div>
       </div>
     </div>

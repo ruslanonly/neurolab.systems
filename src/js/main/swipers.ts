@@ -21,11 +21,13 @@ function setUpMainProductSwiper() {
     }
   });
   
-  $(".main-product-slider .main-product-swiper-button-prev").click(() => {
+  $(".main-product-slider .main-product-swiper-button-prev").click((e) => {
+    e.stopPropagation()
     swiper.slidePrev();
   })
   
-  $(".main-product-slider .main-product-swiper-button-next").click(() => {
+  $(".main-product-slider .main-product-swiper-button-next").click((e) => {
+    e.stopPropagation()
     swiper.slideNext();
   })
 }

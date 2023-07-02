@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 550;
     top: calc(.5rem + 80px);
+    backdrop-filter: blur(10px);
   }
 
   * {
@@ -46,7 +47,7 @@
     padding: 1.5rem 2rem;
     max-width: 620px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+
     border: 1px solid var(--c-grey);
   }
 

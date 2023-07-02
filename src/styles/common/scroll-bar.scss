@@ -1,0 +1,22 @@
+.scroll-bar__container {
+  &::-webkit-scrollbar {
+    width:  3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--c-light-grey);
+    border-radius: 30px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+.scroll-bar-hided__container {
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

@@ -13,7 +13,7 @@ export function getMainProductSlidesHTML(slides: MainProduct[]) {
     `
 
     html += `
-    <div class="main-product-slider__slide">
+    <div onclick="window.location.href='${slides[i].url}'" class="main-product-slider__slide">
       <div class="main-product-slider__slide-wrapper">
 
         ${backgroundHTML}

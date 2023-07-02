@@ -1,12 +1,6 @@
 import $ from "jquery"
 
 function setUp() {
-  $('#TabbarFactsItem').click(() => {
-    
-  })
-  $('#TabbarSolvedTasksItem').click(() => {
-    
-  })
   $('#TabbarProductsItem').click(() => {
     console.log('hello')
     let isActive = $('#HeaderProductsButton').hasClass('header__menu-item--active')
@@ -21,12 +15,6 @@ function setUp() {
       $('#ProductsPopupWrapper .products-popup')
       .fadeIn(100);
     }
-  })
-  $('#TabbarPrinciplesItem').click(() => {
-    
-  })
-  $('#TabbarSendItem').click(() => {
-    
   })
 }
 

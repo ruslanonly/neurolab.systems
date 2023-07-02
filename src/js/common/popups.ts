@@ -48,6 +48,68 @@ export function getProductsPopupHTML() {
   return productsPopupHTML
 }
 
+export function getSendFormPopupHTML() {
+  return `
+    <div id="SendFormPopup" class="apply-form scroll-bar-hided__container">
+      <div class="apply-form__wrapper">
+        <div class="apply-form__wrapper-left apply-form__wrapper-left-form">
+          <div class="apply-form__success-message apply-form__message">
+            <h1>Ваша заяка принята!</h1>
+            <p>Какой-то дополнительный текст. Например, наш менеджер свяжется с вами в течении дня.</p>
+            <button class="button button--big-button">Хорошо</button>
+          </div>
+          <div class="apply-form__error-message apply-form__message">
+            <h1>Заявка не отправлена!</h1>
+            <p>Какой-то дополнительный текст. Например, можно здесь подробнее описать возникшую ошибку.</p>
+            <button class="button button--big-button">Попробовать заново</button>
+          </div>
+          <div class="apply-form__form">
+            <h1 class="apply-form__title">Оставить заявку</h1>
+            <input class="input apply-form__input input--name" type="text" name="name" placeholder="Имя">
+            <input class="input apply-form__input input--email" type="text" name="email" placeholder="Email">
+            <input id="MainApplyFormPhoneInput" class="input apply-form__input input--phone" type="text" name="phone" placeholder="+7 999 999 99 99">
+            <div class="apply-form__bottom-wrapper">
+              <textarea class="textarea apply-form__input input--task" type="text" name="task" placeholder="Опишите свою задачу"></textarea>
+              <div class="apply-form__checkbox">
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="happy1">
+                  <label for="happy1">
+                    <span class="material-symbols-outlined">done</span>
+                  </label>
+                </div>
+                <span>
+                  Я согласен (-а) с <a href="">политикой обработки персональных данных</a> 
+                </span>
+              </div>
+            </div>
+            <button class="button button--big-button">
+              <img src="../assets/tabbar/black-send.svg" alt="">
+              <span>Оставить заявку</span>
+            </button>
+          </div>
+        </div>
+        <div class="apply-form__wrapper-right">
+          <button class="apply-form__close-button">
+            <span class="material-icons">cancel</span>
+          </button>
+          <div class="apply-form__info">
+            <p>Пока остальные говорят, наши разработки обеспечивают безопасность инфраструктурных и государственных объектов.</p>
+            <div class="apply-form__companies-logos">
+              <img src="/assets/gasprom.png" alt="">
+              <img src="/assets/newopentech.png" alt="">
+              <img src="/assets/profitness.png" alt="">
+              <img src="/assets/rusal.png" alt="">
+              <span>МО РФ</span>
+              <span>ФСИН РФ</span>
+              <img src="/assets/worldclass.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+}
+
 function handleDocumentClick(event: JQuery.ClickEvent<Document, undefined, Document, Document>) {
   let area = $('#ProductsPopupWrapper')
   let button = $('#HeaderProductsButton')
@@ -86,6 +148,26 @@ function setUpProductsPopup() {
   })
 }
 
+function setUpSendFormPopup() {
+  let popupWrapper = $('#SendFormPopupWrapper')
+  popupWrapper.html(getSendFormPopupHTML())
+  console.log('setUpSendFormPopup')
+  let popup = $('#SendFormPopup')
+  popup.hide();
+
+  $('#HeaderSendButton').click((e) => {
+    popup.fadeIn();
+  });
+  $('#TabbarSendButton').click((e) => {
+    popup.fadeIn();
+  });
+
+  $('#SendFormPopup .apply-form__close-button').click(() => {
+    popup.fadeOut();
+  })
+}
+
 export const Popup = {
-  setUpProductsPopup
+  setUpProductsPopup,
+  setUpSendFormPopup
 }

@@ -7,8 +7,10 @@
     justify-content: center;
     gap: 2.5rem;
   }
+
   &__title {
     & {
+      letter-spacing: 1.28px;
       text-align: center;
       font-size: 1rem;
       font-weight: 500;
@@ -30,11 +32,6 @@
   .technologies {
     & {
       gap: 1.5rem;
-    }
-    &__title {
-      &:before {
-        content: "ТЕХНОЛОГИИ";
-      }
     }
     &__tech-list {
       & {

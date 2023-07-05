@@ -39,6 +39,9 @@
 
 .header__menu-item {
   & {
+    display: flex;
+    align-items: center;
+    height: 39px;
     color: #fff;
     font-size: 1rem;
     font-weight: 300;
@@ -57,6 +60,7 @@
 
     span {
       &:nth-child(2) {
+        width: 20px;
         transition: all .4s ease;
         transform: translateY(1px) rotateX(0deg);
       }

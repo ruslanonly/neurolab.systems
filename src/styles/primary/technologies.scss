@@ -5,6 +5,13 @@
     justify-content: space-between;
   }
 
+  &__save-button {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 1rem;
@@ -24,6 +31,9 @@
     &__wrapper {
       flex-direction: column;
       gap: 1.6rem;
+    }
+    &__save-button {
+      display: flex;
     }
     &__tech-list {
       flex-wrap: wrap;

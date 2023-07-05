@@ -50,7 +50,7 @@ export function getProductsPopupHTML() {
 
 export function getSendFormPopupHTML() {
   return `
-    <div id="SendFormPopup" class="apply-form scroll-bar-hided__container">
+    <div id="SendFormPopup" class="apply-form scroll-bar-hided__container apply-form--not-fixed-height">
       <div class="apply-form__wrapper">
         <div class="apply-form__wrapper-left apply-form__wrapper-left-form">
           <div class="apply-form__success-message apply-form__message">
@@ -72,8 +72,8 @@ export function getSendFormPopupHTML() {
               <textarea class="textarea apply-form__input input--task" type="text" name="task" placeholder="Опишите свою задачу"></textarea>
               <div class="apply-form__checkbox">
                 <div class="checkbox">
-                  <input type="checkbox" class="checkbox__input" id="happy1">
-                  <label for="happy1">
+                  <input type="checkbox" class="checkbox__input" id="happy2">
+                  <label for="happy2">
                     <span class="material-symbols-outlined">done</span>
                   </label>
                 </div>
@@ -95,13 +95,13 @@ export function getSendFormPopupHTML() {
           <div class="apply-form__info">
             <p>Пока остальные говорят, наши разработки обеспечивают безопасность инфраструктурных и государственных объектов.</p>
             <div class="apply-form__companies-logos">
-              <img src="/assets/gasprom.png" alt="">
-              <img src="/assets/newopentech.png" alt="">
-              <img src="/assets/profitness.png" alt="">
-              <img src="/assets/rusal.png" alt="">
+              <img src="assets/gasprom.png" alt="">
+              <img src="assets/newopentech.svg" alt="">
+              <img src="assets/profitness.svg" alt="">
+              <img src="assets/rusal.svg" alt="">
               <span>МО РФ</span>
               <span>ФСИН РФ</span>
-              <img src="/assets/worldclass.png" alt="">
+              <img src="assets/worldclass.svg" alt="">
             </div>
           </div>
         </div>

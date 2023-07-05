@@ -104,8 +104,17 @@
       gap: .39rem;
       text-decoration: none;
     }
+    &:hover {
+      span {
+        color: #E40E23;
+      }
+      img {
+        filter: none;
+      }
+    }
     img {
       transform: translateY(-1px);
+      filter: grayscale(1) brightness(1.7);
     }
   }
   &__links {
@@ -121,6 +130,10 @@
     }
     a {
       text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 }

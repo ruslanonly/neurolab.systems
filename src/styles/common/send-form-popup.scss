@@ -1,5 +1,4 @@
 #SendFormPopup {
-  overflow-y: scroll;
   position: fixed;
   z-index: 1001;
   top: 0;
@@ -12,10 +11,10 @@
 
 @media all and (max-width: 1108px) {
   #SendFormPopup {
+    overflow-y: auto;
     .apply-form__wrapper {
       padding-top: 2.5rem;
       max-height: 100vh;
-      padding-bottom: 2rem;
     }
 
     .apply-form__wrapper-right {
@@ -29,7 +28,8 @@
     }
 
     .apply-form__form {
-      margin-bottom: 6rem;
+      padding: 0 1rem;
+      padding-bottom: 7rem;
     }
   }
   

@@ -45,16 +45,19 @@
       }
     }
 
+
+
     &-heading {
       display: flex;
       justify-content: space-between;
       font-size: 1rem;
-      font-weight: 700;
+      
       color: #fff;
-      h3 {
+      &-title {
         font-size: 1rem;
+        font-weight: 600;
       }
-      span {
+      &-icon {
         font-size: 2rem;
         line-height: 1.5rem;
       }

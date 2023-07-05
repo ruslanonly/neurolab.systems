@@ -37,16 +37,19 @@
   }
   &--big-button {
     & {
-      & {
-        padding: 1rem 2rem;
-        background: var(--c-volt-green);
-        border-radius: 10px;
-        font-weight: 500;
-        gap: .5rem;
-      }
-      &:hover {
-        background: var(--c-light-volt-green);
-      }
+      height: 60px;
+      padding: 1rem 2rem;
+      background: var(--c-volt-green);
+      border-radius: 10px;
+      font-weight: 500;
+      gap: .5rem;
+    }
+    &:hover {
+      background: var(--c-light-volt-green);
+    }
+    &:disabled {
+      background: var(--c-light-grey);
+      color: black;
     }
   }
 }

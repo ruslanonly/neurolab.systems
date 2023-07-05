@@ -6,7 +6,10 @@
   }
 
   &__title {
-    font-size: 2.1rem;
+    line-height: 80%;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--c-dark-blue);
   }
 
   &__plans {
@@ -45,6 +48,7 @@
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 22px;
+    color: var(--c-dark-blue);
   }
   &__month {
     & {
@@ -77,8 +81,7 @@
     }
 
     &__title {
-      font-weight: 300 !important;
-      font-size: 1.8rem;
+      font-size: 2rem;
       line-height: 3rem;
     }
 

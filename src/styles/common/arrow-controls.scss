@@ -15,6 +15,9 @@
     overflow: hidden;
     span {
       transition: all .3s ease;
+      &:nth-child(1) {
+        color: var(--c-dark-blue);
+      }
       &:nth-child(2) {
         position: absolute;
         color: var(--c-turquoise);

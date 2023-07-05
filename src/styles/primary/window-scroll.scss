@@ -4,19 +4,24 @@
       height: 100vh;
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50vw 50vw;
       grid-template-rows: 1fr;
+    }
+
+    &-light {
+      .window-scroll__window-top-title {
+        font-weight: 600;
+      }
     }
 
     &-top-title {
       text-transform: uppercase;
       font-size: .9rem;
-      font-weight: 500;
-      letter-spacing: 2px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
     }
 
     &-title {
-      width: 1px;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       -ms-hyphens: auto;
@@ -29,7 +34,8 @@
 
     &-subtitle {
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 300;
+      line-height: 150%;
     }
 
     &-l {

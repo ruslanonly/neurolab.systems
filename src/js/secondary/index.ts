@@ -73,8 +73,8 @@ function setUpProductDropdown(product: MainProduct) {
     itemsHTML += `
       <div class="dropdown__item item--${i}"data-no="${i}">
         <div class="dropdown__item-heading">
-          <h3 class="dropdown__item-title">${dropdown![i].title}</h3>
-          <span class="material-symbols-outlined">expand_more</span>
+          <span class="dropdown__item-heading-title">${dropdown![i].title}</span>
+          <span class="material-symbols-rounded dropdown__item-heading-icon">expand_more</span>
         </div>
         <div class="dropdown__content scroll-bar__container">
           ${contentItems}

@@ -52,12 +52,14 @@
   }
 
   &__slide-title {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.6rem;
     color: var(--c-turquoise);
+    line-height: 100%;
   }
   &__slide-desc {
-    font-weight: 500;
+    line-height: 150%;
+    font-weight: 400;
     font-size: 1.1rem;
     color: var(--c-light-grey);
   }
@@ -70,6 +72,23 @@
   &__slide {
     & {
       height: 430px;
+    }
+
+    &:hover {
+      .dev-principles__slide-wrapper {
+        cursor: pointer;
+        transition: all var(--tr);
+        background: var(--c-turquoise);
+      }
+      .dev-principles__slide-title {
+        color: var(--c-dark-blue);
+      }
+      .dev-principles__slide-desc {
+        color: var(--c-dark-blue);
+      }
+      .dev-principles__slide-number {
+        color: var(--c-dark-blue);
+      } 
     }
 
     &-info {

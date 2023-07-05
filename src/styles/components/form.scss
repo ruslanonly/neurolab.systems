@@ -66,3 +66,29 @@
     }
   }
 }
+
+.input-error-wrapper {
+  & {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+
+  &__error {
+    display: none;
+    color: var(--c-error);
+    font-size: 1rem;
+    line-height: normal;
+    opacity: 0.92;
+  }
+
+  &--has-error {
+    .apply-form__input {
+      border-color: var(--c-error);
+    }
+
+    .input-error-wrapper__error {
+      display: block;
+    }
+  }
+}

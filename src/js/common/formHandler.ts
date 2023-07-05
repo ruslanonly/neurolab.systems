@@ -1,6 +1,12 @@
 import $ from "jquery"
 import { setUpApplyFormPhoneInput } from "../main/phone"
 
+function isEmail(email: string) {
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  return emailPattern.test(email);
+}
+
 type FormState = {
   name: string,
   email: string,
@@ -20,6 +26,26 @@ function handleForm(wrapperSelector: string) {
       checkbox: $(`${wrapperSelector} .apply-form__input.input--checkbox`).is(":checked")
     }
 
+    let hasError = false
+    let phoneNumber = $(`${wrapperSelector} .input--phone`).val() as string;
+    phoneNumber = phoneNumber.replace(/\s/g, '').replace('+', '')
+    if (phoneNumber.length < 11) {
+      $(`${wrapperSelector} .phone-input-wrapper .input-error-wrapper__error`).html('Это поле нужно заполнить')
+      $(`${wrapperSelector} .phone-input-wrapper`).addClass('input-error-wrapper--has-error')
+      hasError = true
+    } else {
+      $(`${wrapperSelector} .phone-input-wrapper`).removeClass('input-error-wrapper--has-error')
+    }
+    if (!isEmail($(`${wrapperSelector} .input--email`).val() as string)) {
+      $(`${wrapperSelector} .email-input-wrapper .input-error-wrapper__error`).html('Это поле нужно заполнить')
+      $(`${wrapperSelector} .email-input-wrapper`).addClass('input-error-wrapper--has-error')
+      hasError = true
+    } else {
+      $(`${wrapperSelector} .email-input-wrapper`).removeClass('input-error-wrapper--has-error')
+    }
+
+    if (hasError) return
+
     console.log(formState)
     // логика отправки запросы
     const isSuccess = true
@@ -27,6 +53,7 @@ function handleForm(wrapperSelector: string) {
     if (!isSuccess) {
       message = "error"
     }
+    
 
     $(`${wrapperSelector} .apply-form__wrapper-left`).removeClass('apply-form__wrapper-left-form')
     $(`${wrapperSelector} .apply-form__wrapper-left`).addClass(`apply-form__wrapper-left apply-form__wrapper-left-${message}`)
@@ -40,8 +67,12 @@ function handleForm(wrapperSelector: string) {
         $(wrapperSelector).fadeOut()
       }
     })
+
+
     
   })
+
+
 }
 
 export function createFormEventListeners() {

@@ -84,7 +84,7 @@ export function getSendFormPopupHTML() {
                 <div class="checkbox">
                   <input type="checkbox" class="checkbox__input" id="happy2">
                   <label for="happy2">
-                    <img src="/assets/done.svg" alt="">
+                    <img src="assets/done.svg" alt="">
                   </label>
                 </div>
                 <span>
@@ -93,7 +93,7 @@ export function getSendFormPopupHTML() {
               </div>
             </div>
             <button class="button button--big-button">
-              <img src="../assets/tabbar/black-send.svg" alt="">
+              <img src="assets/black-send.svg" alt="">
               <span>Оставить заявку</span>
             </button>
           </div>

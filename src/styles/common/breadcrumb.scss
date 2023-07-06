@@ -3,6 +3,7 @@
     display: flex;
     gap: .5rem;
     align-items: center;
+    
   }
 
   * {
@@ -14,9 +15,9 @@
     & {
       display: flex;
       align-items: center;
-      color: #000;
       text-decoration: none;
       font-weight: 400;
+      color: var(--c-dark-blue);
     }
 
     &--active {

@@ -21,6 +21,7 @@
     & {
       font-size: 3rem;
       font-weight: 500;
+      color: var(--c-dark-blue);
     }
   }
 
@@ -31,8 +32,8 @@
   &__close-button {
     position: absolute;
     
-    right: 5%;
-    top: 4%;
+    right: 40px;
+    top: 40px;
     color: #fff;
     &:hover {
       opacity: 0.5;
@@ -202,8 +203,8 @@
     }
   }
   .apply-form__close-button {
-    top: 7%;
-    right: 8%;
+    top: 52px;
+    right: 52px;
   }
 }
 

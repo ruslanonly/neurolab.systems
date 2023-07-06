@@ -40,6 +40,7 @@
       p {
         font-size: 1.1rem;
         font-weight: 400;
+        line-height: 150%;
       }
     }
   }
@@ -111,8 +112,9 @@
 
     &-descr {
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 300;
       color: var(--c-light-grey);
+      line-height: 150%;
     }
 
     &-bottom {

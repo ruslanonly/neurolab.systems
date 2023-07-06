@@ -25,6 +25,7 @@
     font-weight: 400;
     font-size: 3rem;
     line-height: 60px;
+    color: var(--c-dark-blue);
   }
 
   &__slider-nav {
@@ -36,6 +37,7 @@
   &__nav-fracs {
     font-size: 2rem;
     font-weight: 400;
+    color: var(--c-dark-blue);
     span {
       &:nth-child(2) {
         color: var(--c-light-grey);
@@ -61,7 +63,7 @@
     line-height: 150%;
     font-weight: 400;
     font-size: 1.1rem;
-    color: var(--c-light-grey);
+    color: var(--c-grey);
   }
   &__slide-number {
     font-weight: 300;

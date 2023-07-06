@@ -80,7 +80,7 @@ export function getSendFormPopupHTML() {
                 <div class="checkbox">
                   <input type="checkbox" class="checkbox__input" id="happy2">
                   <label for="happy2">
-                    <span class="material-symbols-outlined">done</span>
+                    <img src="/assets/done.svg" alt="">
                   </label>
                 </div>
                 <span>

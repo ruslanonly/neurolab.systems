@@ -27,6 +27,9 @@
 }
 
 @media all and (max-width: 1108px) {
+  .technologies__save-button {
+    max-width: none;
+  }
   .technologies {
     &__wrapper {
       flex-direction: column;

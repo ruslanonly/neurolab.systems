@@ -20,7 +20,7 @@
     opacity: 0;
 
     &:checked {
-      & + label .material-symbols-outlined {
+      & + label img {
         display: inline-block;
       }
       & + label::before {
@@ -40,7 +40,7 @@
       display: inline-flex;
       align-items: center;
       user-select: none;
-    .material-symbols-outlined {
+    img {
       font-size: 1rem;
       display: none;
       color: #fff;

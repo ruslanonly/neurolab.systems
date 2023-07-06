@@ -60,7 +60,7 @@
 
     span {
       &:nth-child(2) {
-        width: 20px;
+        width: 18.5px;
         transition: all .4s ease;
         transform: translateY(1px) rotateX(0deg);
       }
@@ -106,6 +106,10 @@
   .button {
     height: 100%;
   }
+}
+
+#HeaderSendButton {
+  color: var(--c-dark-blue);
 }
 
 @media all and (max-width: 1108px) {

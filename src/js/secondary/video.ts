@@ -14,7 +14,7 @@ export function setProductBackground() {
   
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-  const imageData = context.getImageData(canvas.width - 1, canvas.height - 1, 100, 100);
+  const imageData = context.getImageData(canvas.width - 1, 0, 100, 100);
   const pixelData = imageData.data;
 
   const red = pixelData[0];

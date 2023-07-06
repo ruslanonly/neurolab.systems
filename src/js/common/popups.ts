@@ -51,6 +51,7 @@ export function getProductsPopupHTML() {
 export function getSendFormPopupHTML() {
   return `
     <div id="SendFormPopup" class="apply-form scroll-bar-hided__container apply-form--not-fixed-height">
+    <section class="container container--primary">
       <div class="apply-form__wrapper">
         <div class="apply-form__wrapper-left apply-form__wrapper-left-form">
           <div class="apply-form__success-message apply-form__message">
@@ -115,6 +116,7 @@ export function getSendFormPopupHTML() {
           </div>
         </div>
       </div>
+    </section>
     </div>
   `
 }

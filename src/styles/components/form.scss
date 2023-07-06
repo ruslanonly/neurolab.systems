@@ -69,12 +69,15 @@
 
 .input-error-wrapper {
   & {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: .3rem;
   }
 
   &__error {
+    position: absolute;
+    bottom: -55%;
     display: none;
     color: var(--c-error);
     font-size: 1rem;

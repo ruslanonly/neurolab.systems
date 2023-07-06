@@ -65,7 +65,10 @@ export function getSendFormPopupHTML() {
           </div>
           <div class="apply-form__form">
             <h1 class="apply-form__title">Оставить заявку</h1>
-            <input class="input apply-form__input input--name" type="text" name="name" placeholder="Имя">
+            <div class="input-error-wrapper name-input-wrapper">
+              <input class="input apply-form__input input--name" type="text" name="name" placeholder="Имя">
+              <span class="input-error-wrapper__error">Это поле нужно заполнить</span>
+            </div>
             <div class="input-error-wrapper email-input-wrapper">
               <input class="input apply-form__input input--email" type="text" name="email" placeholder="Email">
               <span class="input-error-wrapper__error">Это поле нужно заполнить</span>

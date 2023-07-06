@@ -44,6 +44,14 @@ function handleForm(wrapperSelector: string) {
       $(`${wrapperSelector} .email-input-wrapper`).removeClass('input-error-wrapper--has-error')
     }
 
+    if (!$(`${wrapperSelector} .input--name`).val()) {
+      $(`${wrapperSelector} .name-input-wrapper .input-error-wrapper__error`).html('Это поле нужно заполнить')
+      $(`${wrapperSelector} .name-input-wrapper`).addClass('input-error-wrapper--has-error')
+      hasError = true
+    } else {
+      $(`${wrapperSelector} .name-input-wrapper`).removeClass('input-error-wrapper--has-error')
+    }
+
     if (hasError) return
 
     console.log(formState)
@@ -53,12 +61,14 @@ function handleForm(wrapperSelector: string) {
     if (!isSuccess) {
       message = "error"
     }
-    
 
     $(`${wrapperSelector} .apply-form__wrapper-left`).removeClass('apply-form__wrapper-left-form')
     $(`${wrapperSelector} .apply-form__wrapper-left`).addClass(`apply-form__wrapper-left apply-form__wrapper-left-${message}`)
 
-    
+    if (isSuccess) {
+      $(`${wrapperSelector} input`).val('')
+    }
+
     $(document).on('click', `${wrapperSelector} .apply-form__message .button`, () => {
       $(`${wrapperSelector} .apply-form__wrapper-left`).addClass('apply-form__wrapper-left-form')
       $(`${wrapperSelector} .apply-form__wrapper-left`).removeClass(`apply-form__wrapper-left-${message}`)
@@ -67,12 +77,7 @@ function handleForm(wrapperSelector: string) {
         $(wrapperSelector).fadeOut()
       }
     })
-
-
-    
   })
-
-
 }
 
 export function createFormEventListeners() {

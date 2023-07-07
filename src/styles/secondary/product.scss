@@ -131,6 +131,25 @@
     left: -5%;
     transform: translateY(-50%);
     z-index: 100;
+
+    &-wrapper {
+      overflow: hidden;
+      position: absolute;
+      top: 0; 
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+
+    &-gradient {
+      z-index: 101;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 380px;
+      
+    }
   }
 
   &--light-theme {
@@ -162,6 +181,9 @@
 }
 
 @media all and (max-width: 1108px) {
+  .product__video-gradient {
+    display: none;
+  }
   .product {
     height: auto;
     &__dropdown {

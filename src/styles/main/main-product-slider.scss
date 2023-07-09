@@ -18,8 +18,10 @@
       grid-auto-flow: column;
       height: 100%;
       width: 100%;
+      padding: 2rem 0;
     }
   }
+
 
   &__video {
     width: 100%;
@@ -46,6 +48,10 @@
       justify-content: center;
       text-decoration: none;
     }
+    &-outer-wrapper {
+      width: 100%;
+      height: 100%;
+    }
     &-wrapper {
       cursor: pointer;
       position: relative;
@@ -59,8 +65,9 @@
       padding: 4rem 2rem 3rem 4rem;
       border-radius: 60px;
       height: 560px;
-      box-shadow: 4px 2px 21px 4px rgba(0, 0, 0, 0.09);
       width: 100%;
+      box-shadow: 4px 2px 21px 4px rgba(0, 0, 0, 0.09);
+
 
       &:hover {
         &::before {

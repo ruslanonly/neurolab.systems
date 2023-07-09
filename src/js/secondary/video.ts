@@ -2,19 +2,16 @@ import $ from 'jquery'
 
 export function setProductBackground() {
   const video = document.getElementById('ProductVideo') as HTMLVideoElement;
-
   const canvas = document.createElement('canvas');
   const context = canvas.getContext('2d') as CanvasRenderingContext2D;
   
-
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
 
-  console.log(canvas)
-  
+  console.log('seeked');
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-  const imageData = context.getImageData(canvas.width - 100, canvas.height - 200, 100, 100);
+  const imageData = context.getImageData(canvas.width - 10, Math.floor(canvas.height / 2), 1, 1);
   const pixelData = imageData.data;
 
   const red = pixelData[0];
@@ -22,15 +19,12 @@ export function setProductBackground() {
   const blue = pixelData[2];
 
   const hexColor = rgbToHex(red, green, blue);
-  console.log(red, green, blue)
   console.log(hexColor);
 
-  console.log($('.product .product__wrapper'))
+  // $('.product .product__wrapper').css('background', hexColor);
+  $('.product').animate({ opacity: 1 }, 300);
 
-  $('.product .product__wrapper').css('background', hexColor)
-  $('.product').animate({opacity: 1}, 300)
-
-  $('.product').addClass(isDarkColor(red, green, blue) ? 'product--dark-theme' : 'product--light-theme')
+  $('.product').addClass(isDarkColor(red, green, blue) ? 'product--dark-theme' : 'product--light-theme');
 }
 
 //@ts-ignore

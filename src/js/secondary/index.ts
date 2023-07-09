@@ -21,6 +21,8 @@ function setUpSecondaryProductPage() {
     return prod.id == productId
   }) || mainProducts[0]
 
+  $('.product .product__wrapper').css('background', currentProduct.content.bg);
+
   $("#section-breadcrumb .breadcrumb__item--active").html(currentProduct.title)
 
   $('.product .product__title').html(currentProduct.title)

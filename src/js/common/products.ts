@@ -14,6 +14,7 @@ export type MainProduct = {
   video?: string,
   url: string,
   content: {
+    bg: string,
     dropdown?: {
       title: string,
       elements: {heading: string, text: string}[]
@@ -33,7 +34,9 @@ export const mainProducts: MainProduct[] = [
     presentationType: "photo",
     photo: armsPhoto,
     url: "/primary.html",
-    content: {}
+    content: {
+      bg: '#3b1016',
+    }
   },
   {
     id: "pakrov", 
@@ -43,6 +46,7 @@ export const mainProducts: MainProduct[] = [
     video: pakrovVideo,
     url: "/secondary.html?product=pakrov",
     content: {
+      bg: '#3b1016',
       dropdown: [
         {
           title: "Сроки разработки",
@@ -79,7 +83,9 @@ export const mainProducts: MainProduct[] = [
     presentationType: "video",
     video: icbVideo,
     url: "/secondary.html?product=isb",
-    content: {}
+    content: {
+      bg: 'rgb(1, 38, 42)',
+    }
   },
   {
     id: "proftrener", 
@@ -88,7 +94,9 @@ export const mainProducts: MainProduct[] = [
     presentationType: "video",
     video: profTrenerVideo,
     url: "/secondary.html?product=proftrener",
-    content: {}
+    content: {
+      bg: 'rgb(124, 25, 247)',
+    }
   },
   { 
     id: "dms", 
@@ -98,6 +106,7 @@ export const mainProducts: MainProduct[] = [
     video: dmsVideo,
     url: "/secondary.html?product=dms",
     content: {
+      bg: '#ffd086',
       dropdown: [
         {
           title: "Сроки разработки",
@@ -134,6 +143,8 @@ export const mainProducts: MainProduct[] = [
     presentationType: "video",
     video: raspVideo,
     url: "/secondary.html?product=recognition",
-    content: {}
+    content: {
+      bg: 'rgb(79, 107, 157)',
+    }
   }
 ]

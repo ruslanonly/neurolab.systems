@@ -5,6 +5,7 @@
     z-index: 550;
     top: calc(.5rem + 80px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   * {

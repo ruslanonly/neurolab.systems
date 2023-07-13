@@ -12,6 +12,7 @@
     background: var(--c-dark-blue-o60);
     border: 1px solid var(--c-grey);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 1rem 1.5rem;
     height: 80px;

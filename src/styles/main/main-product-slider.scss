@@ -181,6 +181,10 @@
       width: 219.313% !important;
       height:  125% !important;
     }
+
+    &__video {
+      transform: translate(-10%, -50%) !important;
+    }
   }
 }
 
@@ -237,12 +241,16 @@
 @media all and (max-width: 1108px) {
   .main-product-slider {
     & {
-      margin: 3rem 0 0 0;
-      height: 550px;
+      height: 100vh;
+    }
+
+    &__wrapper {
+      padding: 1.5rem 0 calc(2.2rem + 84px) 0;
     }
     
     &__video {
-      width: 100%;
+      width: auto;
+      height: 140%;
       top: 50%;
       transform: translateY(-50%);
     }

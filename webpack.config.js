@@ -4,12 +4,12 @@ const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlNames = ['main', 'primary', 'secondary'];
-
 const htmlPlugins = htmlNames.map((fileName) => {
   return new HtmlWebpackPlugin({
     template: `src/html/${fileName}.html`,
     filename: `${fileName}.html`,
     chunks: [fileName],
+    minify: false
   });
 });
 
@@ -65,6 +65,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
+              minimize: false,
               sources: {
                 list: [
                   {
@@ -93,7 +94,7 @@ module.exports = {
       filename: '[name]/[name].bundle.css',
       chunkFilename: '[id].css',
     }),
-    ...htmlPlugins,
+    ...htmlPlugins
   ],
   optimization: {
     splitChunks: {
@@ -107,7 +108,7 @@ module.exports = {
             comments: false,
           },
         },
-        extractComments: false,
+        extractComments: false
       }),
     ],
   },

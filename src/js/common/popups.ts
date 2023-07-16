@@ -27,7 +27,7 @@ export function getProductsPopupHTML() {
     `
     
     productsPopupHTML += `
-      <a href="${p.url}" class="products-popup__product">
+      <a href=".${p.url}" class="products-popup__product">
         <div class="products-popup__product-top">
           <div class="products-popup__product-ph-img">
             ${backgroundHTML}

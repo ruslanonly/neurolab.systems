@@ -51,15 +51,6 @@ module.exports = {
         },
       },  
       {
-        test: /\.mp4$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'videos/[name].[ext]',
-          },
-        },
-      },
-      {
         test: /\.html$/,
         use: [
           {
@@ -73,21 +64,25 @@ module.exports = {
                     attribute: 'src',
                     type: 'src',
                   },
-                  {
-                    tag: "source",
-                    attribute: "src",
-                    type: "src"
-                  }
                 ],
               },
             },
           },
         ],
       },
+      {
+        test: /\.mp4$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'videos/[name].[ext]',
+          },
+        },
+      },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js', '.mp4']
   },
   plugins: [
     new MiniCssExtractPlugin({

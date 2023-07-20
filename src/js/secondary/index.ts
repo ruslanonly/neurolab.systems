@@ -28,9 +28,9 @@ function setUpSecondaryProductPage() {
   $('.product .product__title').html(currentProduct.title)
   $('.product .product__subtitle').html(currentProduct.subtitle)
 
-  $('.product .product__video').html(`
-    <source class="product__video" src="${currentProduct.video}" type="video/mp4">
-  `)
+  // $('.product .product__video').html(`
+  //   <source class="product__video" src="${currentProduct.video}" type="video/mp4">
+  // `)
 
   $('.product .product__right-header-title h1')
   .html(currentProduct.content?.headerTitle || '')

@@ -11,7 +11,6 @@ export function getMainProductSlidesHTML(slides: MainProduct[]) {
     ` : `
       <div class="main-product-slider__image" style="background-image: url(${slides[i].photo})"></div>
     `
-
     html += `
     <div onclick="window.location.href='.${slides[i].url}'" class="main-product-slider__slide">
       <div class="main-product-slider__slide-wrapper">

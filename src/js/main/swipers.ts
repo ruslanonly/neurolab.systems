@@ -8,7 +8,7 @@ import { devPrinciples, getDevPrinciplesSlidesHTML } from "./dev-principles";
 Swiper.use([Navigation, Pagination])
 
 function setUpMainProductSwiper() {
-  $('.main-product-slider__wrapper').html(getMainProductSlidesHTML(mainProducts))
+  // $('.main-product-slider__wrapper').html(getMainProductSlidesHTML(mainProducts))
   const swiper = new Swiper('.main-product-slider-swiper', {
     slidesPerView: 1,
     direction: 'horizontal',
@@ -33,7 +33,7 @@ function setUpMainProductSwiper() {
 }
 
 function setUpDevPrinciplesSwiper() {
-  $('.dev-principles__slider-wrapper').html(getDevPrinciplesSlidesHTML(devPrinciples))
+  // $('.dev-principles__slider-wrapper').html(getDevPrinciplesSlidesHTML(devPrinciples))
 
   let viewWidth = window.innerWidth
   console.log(viewWidth, viewWidth > 1108 ? 3 : 1)

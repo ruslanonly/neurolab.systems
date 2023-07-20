@@ -60,31 +60,31 @@ function setUpSecondaryProductPage() {
 function setUpProductDropdown(product: MainProduct) {
   let dropdown = product.content.dropdown
 
-  let itemsHTML = ''
-  for(let i = 0; i < dropdown!.length; i++) {
-    let contentItems = ''
-    let elements = dropdown![i].elements
-    for(let j = 0; j < elements.length; j++) {
-      contentItems += `
-        <div class="dropdown__content-item">
-          <h4>${elements[j].heading}</h4>
-          <p>${elements[j].text}</p>
-        </div>
-      `
-    }
-    itemsHTML += `
-      <div class="dropdown__item item--${i}"data-no="${i}">
-        <div class="dropdown__item-heading">
-          <span class="dropdown__item-heading-title">${dropdown![i].title}</span>
-          <span class="material-symbols-rounded dropdown__item-heading-icon">expand_more</span>
-        </div>
-        <div class="dropdown__content scroll-bar__container">
-          ${contentItems}
-        </div>
-      </div>
-    `
-  } 
-  $('.product__dropdown').html(itemsHTML)
+  // let itemsHTML = ''
+  // for(let i = 0; i < dropdown!.length; i++) {
+  //   let contentItems = ''
+  //   let elements = dropdown![i].elements
+  //   for(let j = 0; j < elements.length; j++) {
+  //     contentItems += `
+  //       <div class="dropdown__content-item">
+  //         <h4>${elements[j].heading}</h4>
+  //         <p>${elements[j].text}</p>
+  //       </div>
+  //     `
+  //   }
+  //   itemsHTML += `
+  //     <div class="dropdown__item item--${i}"data-no="${i}">
+  //       <div class="dropdown__item-heading">
+  //         <span class="dropdown__item-heading-title">${dropdown![i].title}</span>
+  //         <span class="material-symbols-rounded dropdown__item-heading-icon">expand_more</span>
+  //       </div>
+  //       <div class="dropdown__content scroll-bar__container">
+  //         ${contentItems}
+  //       </div>
+  //     </div>
+  //   `
+  // } 
+  // $('.product__dropdown').html(itemsHTML)
   $('.product__dropdown .dropdown__item').click((event) => {
     let no = event.currentTarget.getAttribute("data-no")
     let cur = $(`.product__dropdown .dropdown__item.item--${no}`)
@@ -106,6 +106,6 @@ Popup.setUpSendFormPopup()
 
 Tabbar.setUp()
 
-// setUpSecondaryProductPage()
+setUpSecondaryProductPage()
 
 createFormEventListeners()

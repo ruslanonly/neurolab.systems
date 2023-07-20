@@ -133,7 +133,7 @@ function handleDocumentClick(event: JQuery.ClickEvent<Document, undefined, Docum
 }
 
 function setUpProductsPopup() {
-  $('#ProductsPopupWrapper').html(getProductsPopupHTML())
+  // $('#ProductsPopupWrapper').html(getProductsPopupHTML())
   $('.products-popup .products-popup__close-button').click(() => {
     $('#HeaderProductsButton').removeClass('header__menu-item--active')
     $('#ProductsPopupWrapper .products-popup').fadeOut(100);
@@ -161,8 +161,7 @@ function setUpProductsPopup() {
 
 function setUpSendFormPopup() {
   let popupWrapper = $('#SendFormPopupWrapper')
-  popupWrapper.html(getSendFormPopupHTML())
-  console.log('setUpSendFormPopup')
+  // popupWrapper.html(getSendFormPopupHTML())
   let popup = $('#SendFormPopup')
   popup.hide();
 

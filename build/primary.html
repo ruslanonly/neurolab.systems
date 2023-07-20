@@ -8,8 +8,158 @@
 <body>
 
   <div id="ProductsPopupWrapper">
+    <div class="products-popup">
+      <div class="products-popup__wrapper">
+        <div class="products-popup__top">
+          <h1>Продукты</h1>
+          <button class="products-popup__close-button">
+            <span class="material-icons">cancel</span>
+          </button>
+        </div>
+        <div class="products-popup__products">
+  
+          <a href="./primary.html" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <div class="products-popup__image" style="background-image: url(../assets/1arms.jpg)"></div>
+              </div>
+              <div class="products-popup__product-title">СОЮЗНИК</div>
+            </div>
+            <div class="products-popup__product-subtitle">Система обеспечения безопасности периметра</div>
+          </a>
+        
+          <a href="./secondary.html?product=pakrov" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <video class="products-popup__video" autoplay="" muted="" loop="">
+                  <source src="2b4460a56dbdfbdccd69.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="products-popup__product-title">ПАКРОВ</div>
+            </div>
+            <div class="products-popup__product-subtitle">Программно-аппаратный комплекс раннего обнаружения возгорания</div>
+          </a>
+        
+          <a href="./secondary.html?product=isb" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <video class="products-popup__video" autoplay="" muted="" loop="">
+                  <source src="cf08556e1d4e2b6480da.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="products-popup__product-title">ИСБ</div>
+            </div>
+            <div class="products-popup__product-subtitle">Интеллектуальные системы безопасности</div>
+          </a>
+        
+          <a href="./secondary.html?product=proftrener" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <video class="products-popup__video" autoplay="" muted="" loop="">
+                  <source src="0514807a0e1e53ab4303.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="products-popup__product-title">ПрофТренер</div>
+            </div>
+            <div class="products-popup__product-subtitle">Тренажер по&nbsp;общению с&nbsp;клиентами для&nbsp;сотрудников </div>
+          </a>
+        
+          <a href="./secondary.html?product=dms" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <video class="products-popup__video" autoplay="" muted="" loop="">
+                  <source src="18f288509a01c4e00f1f.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="products-popup__product-title">DMS</div>
+            </div>
+            <div class="products-popup__product-subtitle">Система автоматического предотвращения происшествий</div>
+          </a>
+        
+          <a href="./secondary.html?product=recognition" class="products-popup__product">
+            <div class="products-popup__product-top">
+              <div class="products-popup__product-ph-img">
+                <video class="products-popup__video" autoplay="" muted="" loop="">
+                  <source src="0e2feac8f929f808f2e8.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="products-popup__product-title">Распознование</div>
+            </div>
+            <div class="products-popup__product-subtitle">Сиcтема контроля доступа с&nbsp;биометирией</div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="SendFormPopupWrapper">
+    <div id="SendFormPopup" class="apply-form scroll-bar-hided__container apply-form--not-fixed-height">
+      <section class="container container--primary">
+        <div class="apply-form__wrapper">
+          <div class="apply-form__wrapper-left apply-form__wrapper-left-form">
+            <div class="apply-form__success-message apply-form__message">
+              <h1>Ваша заяка принята!</h1>
+              <p>Какой-то дополнительный текст. Например, наш менеджер свяжется с вами в течении дня.</p>
+              <button class="button button--big-button">Хорошо</button>
+            </div>
+            <div class="apply-form__error-message apply-form__message">
+              <h1>Заявка не отправлена!</h1>
+              <p>Какой-то дополнительный текст. Например, можно здесь подробнее описать возникшую ошибку.</p>
+              <button class="button button--big-button">Попробовать заново</button>
+            </div>
+            <div class="apply-form__form">
+              <h1 class="apply-form__title">Оставить заявку</h1>
+              <div class="input-error-wrapper name-input-wrapper">
+                <input class="input apply-form__input input--name" type="text" name="name" placeholder="Имя">
+                <span class="input-error-wrapper__error">Это поле нужно заполнить</span>
+              </div>
+              <div class="input-error-wrapper email-input-wrapper">
+                <input class="input apply-form__input input--email" type="text" name="email" placeholder="Email">
+                <span class="input-error-wrapper__error">Это поле нужно заполнить</span>
+              </div>
+              <div class="input-error-wrapper phone-input-wrapper">
+                <input id="MainApplyFormPhoneInput" class="input apply-form__input input--phone" type="text" name="phone" placeholder="+7 999 999 99 99">
+                <span class="input-error-wrapper__error">Это поле нужно заполнить</span>
+              </div>
+              <div class="apply-form__bottom-wrapper">
+                <textarea class="textarea apply-form__input input--task" type="text" name="task" placeholder="Опишите свою задачу"></textarea>
+                <div class="apply-form__checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" class="checkbox__input" id="happy2">
+                    <label for="happy2">
+                      <img src="assets/done.svg" alt="">
+                    </label>
+                  </div>
+                  <span>
+                    Я согласен (-а) с <a href="">политикой обработки персональных данных</a> 
+                  </span>
+                </div>
+              </div>
+              <button class="button button--big-button">
+                <img src="assets/black-send.svg" alt="">
+                <span>Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+          <div class="apply-form__wrapper-right">
+            <button class="apply-form__close-button">
+              <span class="material-icons">cancel</span>
+            </button>
+            <div class="apply-form__info">
+              <p>Пока остальные говорят, наши разработки обеспечивают безопасность инфраструктурных и государственных объектов.</p>
+              <div class="apply-form__companies-logos">
+                <img src="assets/gasprom.png" alt="">
+                <img src="assets/newopentech.svg" alt="">
+                <img src="assets/profitness.svg" alt="">
+                <img src="assets/rusal.svg" alt="">
+                <span>МО РФ</span>
+                <span>ФСИН РФ</span>
+                <img src="assets/worldclass.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
   </div>
   <header class="header">
     <div class="header__wrapper">

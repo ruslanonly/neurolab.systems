@@ -106,6 +106,6 @@ Popup.setUpSendFormPopup()
 
 Tabbar.setUp()
 
-setUpSecondaryProductPage()
+// setUpSecondaryProductPage()
 
 createFormEventListeners()

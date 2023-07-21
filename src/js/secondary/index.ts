@@ -41,7 +41,7 @@ function setUpSecondaryProductPage() {
   $('.product .product__right-content-text')
   .html(currentProduct.content?.textHTML || '')
 
-  if (currentProduct.content.dropdown)
+  // if (currentProduct.content.dropdown)
   setUpProductDropdown(currentProduct)
 
   const videoLoaded = $.Deferred();
@@ -86,6 +86,7 @@ function setUpProductDropdown(product: MainProduct) {
   // } 
   // $('.product__dropdown').html(itemsHTML)
   $('.product__dropdown .dropdown__item').click((event) => {
+    console.log('dropdown click')
     let no = event.currentTarget.getAttribute("data-no")
     let cur = $(`.product__dropdown .dropdown__item.item--${no}`)
     let isActive = cur.hasClass('dropdown__item--active')

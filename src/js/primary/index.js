@@ -17,13 +17,13 @@ function setUpVideo() {
 }
 
 function openFullPageVideo() {
-  let video = document.querySelector('.souznik-video__video') as HTMLVideoElement
+  let video = document.querySelector('.souznik-video__video')
   if (video.requestFullscreen) {
     video.requestFullscreen();
   }
 
 
-  function isVideoFullScreen(el: Element) {
+  function isVideoFullScreen(el) {
     return document.fullscreenElement == el
   }
   

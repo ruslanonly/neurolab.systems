@@ -1,9 +1,6 @@
 import Swiper, { Navigation, Pagination } from "swiper"
 
 import $ from "jquery"
-import { getMainProductSlidesHTML } from "./product";
-import { mainProducts } from "../common/products";
-import { devPrinciples, getDevPrinciplesSlidesHTML } from "./dev-principles";
 
 Swiper.use([Navigation, Pagination])
 

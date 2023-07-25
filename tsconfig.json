@@ -17,5 +17,5 @@
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "baseUrl": "./src"
   },
-  "include": [ "src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts", "src/**/*.scss" ]
+  "include": [ "src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts", "src/**/*.scss", "src/js/common/formHandler.js", "src/js/common/popups.js", "src/js/common/products.js", "src/js/main/dev-principles.js", "src/js/common/tabbar.js", "src/js/main/phone.js", "src/js/main/index.js", "src/js/main/product.Js", "src/js/main/swipers.js", "src/js/primary/index.js", "src/js/primary/advantages.js", "src/js/secondary/index.js", "src/js/primary/swipers.js", "src/js/secondary/video.js" ]
 }

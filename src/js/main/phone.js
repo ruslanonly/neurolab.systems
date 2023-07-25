@@ -1,6 +1,6 @@
 import $ from "jquery"
 
-const prefixNumber = (str: string) => {
+const prefixNumber = (str) => {
   if (str === "7") {
     return "7 ";
   }
@@ -13,9 +13,9 @@ const prefixNumber = (str: string) => {
   return "7 ";
 };
 
-export function setUpApplyFormPhoneInput(selector: string) {
+export function setUpApplyFormPhoneInput(selector) {
   $(selector).on("input", () => {
-    const inputValue = $(selector).val() as string || '';
+    const inputValue = $(selector).val() || '';
   
     let value = inputValue.replace(/\D+/g, '');
   

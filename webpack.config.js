@@ -15,9 +15,9 @@ const htmlPlugins = htmlNames.map((fileName) => {
 
 module.exports = {
   entry: {
-    main: './src/js/main/index.ts',
-    primary: './src/js/primary/index.ts',
-    secondary: './src/js/secondary/index.ts',
+    main: './src/js/main/index.js',
+    primary: './src/js/primary/index.js',
+    secondary: './src/js/secondary/index.js',
   },
   output: {
     filename: '[name]/[name].bundle.js',
@@ -28,18 +28,17 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
-      },
-      {
-        test: /\.ts?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader'
+          },
           'sass-loader',
         ],
       },
@@ -87,25 +86,16 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name]/[name].bundle.css',
-      chunkFilename: '[id].css',
+      chunkFilename: '[id].css'
     }),
     ...htmlPlugins
   ],
   optimization: {
+    minimize: false,
     splitChunks: {
       chunks: 'all',
       name: 'common',
     },
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          format: {
-            comments: false,
-          },
-        },
-        extractComments: false
-      }),
-    ],
   },
   devServer: {
     static: {

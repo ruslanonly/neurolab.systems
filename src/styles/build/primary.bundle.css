@@ -653,7 +653,7 @@ body {
 .apply-form__wrapper-right {
   position: relative;
   flex: 1.2;
-  background: url(../assets/apply-form-image.jpg) center no-repeat;
+  background: url('../../assets/photos/apply-form-image.jpg') center no-repeat;
   background-size: cover;
   border-radius: 100px 0px 0px 100px;
   display: flex;
@@ -1322,11 +1322,11 @@ body {
   background-size: cover;
   background-position: center; }
   .window-scroll__window-r-1 {
-    background-image: url(../assets/1.jpg); }
+    background-image: url('../../assets/window-scroll/1.jpg'); }
   .window-scroll__window-r-2 {
-    background-image: url(../assets/2.jpg); }
+    background-image: url('../../assets/window-scroll/2.jpg'); }
   .window-scroll__window-r-3 {
-    background-image: url(../assets/3.jpg); }
+    background-image: url('../../assets/window-scroll/3.jpg'); }
 
 .window-scroll__window-dark {
   background: var(--c-dark-blue); }
@@ -1437,17 +1437,17 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
   .app-area__slide-top--1 {
-    background-image: url(../assets/aeroport.jpg); }
+    background-image: url('../../assets/app-area/aeroport.jpg'); }
   .app-area__slide-top--2 {
-    background-image: url(../assets/ges.jpg); }
+    background-image: url('../../assets/app-area/ges.jpg'); }
   .app-area__slide-top--3 {
-    background-image: url(../849c97870d9634894fcd.jpeg); }
+    background-image: url('../../assets/app-area/tek.jpeg'); }
   .app-area__slide-top--4 {
-    background-image: url(../assets/tekopo.png); }
+    background-image: url('../../assets/app-area/tekopo.png'); }
   .app-area__slide-top--5 {
-    background-image: url(../assets/infr.jpg); }
+    background-image: url('../../assets/app-area/infr.jpg'); }
   .app-area__slide-top--6 {
-    background-image: url(../assets/trubo.jpg); }
+    background-image: url('../../assets/app-area/trubo.jpg'); }
 
 .app-area__slide-title {
   font-size: 2rem;
@@ -1484,6 +1484,9 @@ body {
     height: 6px; }
 
 @media all and (max-width: 1108px) {
+  .app-area__right {
+    overflow: hidden;
+  }
   .app-area__dots {
     display: flex; }
   .app-area__left {

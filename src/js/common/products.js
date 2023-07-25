@@ -5,28 +5,7 @@ import profTrenerVideo from "../../assets/videos/profTrener.mp4"
 import dmsVideo from "../../assets/videos/dms.mp4"
 import raspVideo from "../../assets/videos/rasp.mp4"
 
-export type MainProduct = {
-  id: string,
-  title: string,
-  subtitle: string,
-  presentationType: "photo" | "video",
-  photo?: string,
-  video?: string,
-  url: string,
-  content: {
-    bg: string,
-    dropdown?: {
-      title: string,
-      elements: {heading: string, text: string}[]
-    }[]
-    headerIconURL?: string,
-    headerTitle?: string,
-    headerSubtitle?: string
-    textHTML?: string
-  }
-}
-
-export const mainProducts: MainProduct[] = [
+export const mainProducts = [
   {
     id: "souznik", 
     title: "СОЮЗНИК", 

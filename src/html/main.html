@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная - Neurolab</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js" integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="../styles/build/main.bundle.css" rel="stylesheet">
 </head>
 <body>
+  <script defer src="../js/common/build.js"></script>
+  <script defer src="../js/main/build.js"></script>
   <div id="ProductsPopupWrapper">
     <div class="products-popup">
       <div class="products-popup__wrapper">
@@ -31,7 +36,7 @@
             <div class="products-popup__product-top">
               <div class="products-popup__product-ph-img">
                 <video class="products-popup__video" autoplay="" muted="" loop="">
-                  <source src="videos/pakrov.mp4" type="video/mp4">
+                  <source src="../assets/videos/pakrov.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="products-popup__product-title">ПАКРОВ</div>
@@ -43,7 +48,7 @@
             <div class="products-popup__product-top">
               <div class="products-popup__product-ph-img">
                 <video class="products-popup__video" autoplay="" muted="" loop="">
-                  <source src="videos/icb.mp4" type="video/mp4">
+                  <source src="../assets/videos/icb.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="products-popup__product-title">ИСБ</div>
@@ -55,7 +60,7 @@
             <div class="products-popup__product-top">
               <div class="products-popup__product-ph-img">
                 <video class="products-popup__video" autoplay="" muted="" loop="">
-                  <source src="videos/profTrener.mp4" type="video/mp4">
+                  <source src="../assets/videos/profTrener.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="products-popup__product-title">ПрофТренер</div>
@@ -67,7 +72,7 @@
             <div class="products-popup__product-top">
               <div class="products-popup__product-ph-img">
                 <video class="products-popup__video" autoplay="" muted="" loop="">
-                  <source src="videos/dms.mp4" type="video/mp4">
+                  <source src="../assets/videos/dms.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="products-popup__product-title">DMS</div>
@@ -79,7 +84,7 @@
             <div class="products-popup__product-top">
               <div class="products-popup__product-ph-img">
                 <video class="products-popup__video" autoplay="" muted="" loop="">
-                  <source src="videos/rasp.mp4" type="video/mp4">
+                  <source src="../assets/videos/rasp.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="products-popup__product-title">Распознование</div>
@@ -219,9 +224,9 @@
         <span class="tab-bar__item-name">Принципы</span>
       </a>
       <div class="tab-bar__item">
-        <button id="TabbarCallButton">
+        <a id="TabbarCallButton" href="tel:+79557371212">
           <img src="../assets/call.svg" alt="">
-        </button>
+        </a>
         <div id="TabbarSendButton" class="tab-bar__item"">
           <div class="tab-bar__item-icon">
             <img src="../assets/tabbar/send.svg" alt="">
@@ -275,7 +280,7 @@
         
                 
               <video class="main-product-slider__video" autoplay="" muted="" loop="">
-                <source class="main-product-slider__video" src="videos/pakrov.mp4" type="video/mp4">
+                <source class="main-product-slider__video" src="../assets/videos/pakrov.mp4" type="video/mp4">
               </video>
                 <div class="main-product-slider__slide-top">
                   <h1 class="main-product-slider__slide-title">ПАКРОВ</h1>
@@ -311,7 +316,7 @@
         
                 
               <video class="main-product-slider__video" autoplay="" muted="" loop="">
-                <source class="main-product-slider__video" src="videos/icb.mp4" type="video/mp4">
+                <source class="main-product-slider__video" src="../assets/videos/icb.mp4" type="video/mp4">
               </video>
             
         
@@ -349,7 +354,7 @@
         
                 
               <video class="main-product-slider__video" autoplay="" muted="" loop="">
-                <source class="main-product-slider__video" src="videos/profTrener.mp4" type="video/mp4">
+                <source class="main-product-slider__video" src="../assets/videos/profTrener.mp4" type="video/mp4">
               </video>
             
         
@@ -387,7 +392,7 @@
         
                 
               <video class="main-product-slider__video" autoplay="" muted="" loop="">
-                <source class="main-product-slider__video" src="videos/dms.mp4" type="video/mp4">
+                <source class="main-product-slider__video" src="../assets/videos/dms.mp4" type="video/mp4">
               </video>
             
         
@@ -426,7 +431,7 @@
         
                 
               <video class="main-product-slider__video" autoplay="" muted="" loop="">
-                <source class="main-product-slider__video" src="videos/rasp.mp4" type="video/mp4">
+                <source class="main-product-slider__video" src="../assets/videos/rasp.mp4" type="video/mp4">
               </video>
             
         

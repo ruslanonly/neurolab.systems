@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная - Neurolab</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js" integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="../styles/build/secondary.bundle.css" rel="stylesheet">
 </head>
 <body>
+  <script defer src="../js/common/build.js"></script>
+  <script defer src="../js/secondary/build.js"></script>
+
   <div id="ProductsPopupWrapper">
     <div class="products-popup">
       <div class="products-popup__wrapper">
@@ -219,9 +225,9 @@
         <span class="tab-bar__item-name">Принципы</span>
       </a>
       <div class="tab-bar__item">
-        <button id="TabbarCallButton">
+        <a id="TabbarCallButton" href="tel:+79557371212">
           <img src="../assets/call.svg" alt="">
-        </button>
+        </a>
         <div id="TabbarSendButton" class="tab-bar__item"">
           <div class="tab-bar__item-icon">
             <img src="../assets/tabbar/send.svg" alt="">
@@ -331,7 +337,7 @@
           <div class="product__video-wrapper">
             <div class="product__video-gradient"></div>
             <video id="ProductVideo" class="product__video" autoplay="" muted="" loop="">
-              <source class="product__video" src="videos/pakrov.mp4" type="video/mp4">
+              <source class="product__video" src="../assets/videos/pakrov.mp4" type="video/mp4">
             </video>
           </div>
         </div>

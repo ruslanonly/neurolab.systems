@@ -1,6 +1,4 @@
-import { MainProduct } from "../common/products";
-
-export function getMainProductSlidesHTML(slides: MainProduct[]) {
+export function getMainProductSlidesHTML(slides) {
   let html = ``;
   for(let i = 0; i < slides.length; i++) {
 

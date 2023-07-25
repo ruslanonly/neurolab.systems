@@ -1,9 +1,9 @@
 import $ from 'jquery'
 
 export function setProductBackground() {
-  const video = document.getElementById('ProductVideo') as HTMLVideoElement;
+  const video = document.getElementById('ProductVideo');
   const canvas = document.createElement('canvas');
-  const context = canvas.getContext('2d') as CanvasRenderingContext2D;
+  const context = canvas.getContext('2d');
   
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
@@ -38,7 +38,7 @@ function rgbToHex(r, g, b) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-function isDarkColor(red: number, green: number, blue: number) {
+function isDarkColor(red, green, blue) {
   var brightness = (red * 299 + green * 587 + blue * 114) / 1000;
   return brightness <= 127;
 }

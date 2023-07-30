@@ -54,34 +54,34 @@ function getSearchParamValue(param) {
 }
 
 function setUpSecondaryProductPage() {
-  let productId = getSearchParamValue("product")
+  // let productId = getSearchParamValue("product")
 
-  let currentProduct = mainProducts.find((prod, index) => {
-    return prod.id == productId
-  }) || mainProducts[0]
+  // let currentProduct = mainProducts.find((prod, index) => {
+  //   return prod.id == productId
+  // }) || mainProducts[0]
 
-  $('.product .product__wrapper').css('background', currentProduct.content.bg);
+  // $('.product .product__wrapper').css('background', currentProduct.content.bg);
 
-  $("#section-breadcrumb .breadcrumb__item--active").html(currentProduct.title)
+  // $("#section-breadcrumb .breadcrumb__item--active").html(currentProduct.title)
 
-  $('.product .product__title').html(currentProduct.title)
-  $('.product .product__subtitle').html(currentProduct.subtitle)
+  // $('.product .product__title').html(currentProduct.title)
+  // $('.product .product__subtitle').html(currentProduct.subtitle)
 
   // $('.product .product__video').html(`
   //   <source class="product__video" src="${currentProduct.video}" type="video/mp4">
   // `)
 
-  $('.product .product__right-header-title h1')
-  .html(currentProduct.content?.headerTitle || '')
+  // $('.product .product__right-header-title h1')
+  // .html(currentProduct.content?.headerTitle || '')
 
-  $('.product .product__right-header-subtitle p')
-  .html(currentProduct.content?.headerSubtitle || '')
+  // $('.product .product__right-header-subtitle p')
+  // .html(currentProduct.content?.headerSubtitle || '')
 
-  $('.product .product__right-content-text')
-  .html(currentProduct.content?.textHTML || '')
+  // $('.product .product__right-content-text')
+  // .html(currentProduct.content?.textHTML || '')
 
   // if (currentProduct.content.dropdown)
-  setUpProductDropdown(currentProduct)
+  setUpProductDropdown()
 
   const videoLoaded = $.Deferred();
 
@@ -96,9 +96,7 @@ function setUpSecondaryProductPage() {
   });
 }
 
-function setUpProductDropdown(product) {
-  let dropdown = product.content.dropdown
-
+function setUpProductDropdown() {
   // let itemsHTML = ''
   // for(let i = 0; i < dropdown!.length; i++) {
   //   let contentItems = ''
